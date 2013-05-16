@@ -1,0 +1,657 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PWBaseServer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PWServer framework </a></h1>
+				<a id="developerHome" href="../index.html">MSCodeFactory</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PWBaseServer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bonjourDomain">&nbsp;&nbsp;&nbsp;&nbsp;bonjourDomain</option>
+	
+	<option value="//api/name/bonjourName">&nbsp;&nbsp;&nbsp;&nbsp;bonjourName</option>
+	
+	<option value="//api/name/bonjourType">&nbsp;&nbsp;&nbsp;&nbsp;bonjourType</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/peers">&nbsp;&nbsp;&nbsp;&nbsp;peers</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/broadcastData:">&nbsp;&nbsp;&nbsp;&nbsp;- broadcastData:</option>
+	
+	<option value="//api/name/connectToPeers:">&nbsp;&nbsp;&nbsp;&nbsp;- connectToPeers:</option>
+	
+	<option value="//api/name/connectedPeers">&nbsp;&nbsp;&nbsp;&nbsp;- connectedPeers</option>
+	
+	<option value="//api/name/connectionTestingEnable:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionTestingEnable:</option>
+	
+	<option value="//api/name/disconnectFromPeers:">&nbsp;&nbsp;&nbsp;&nbsp;- disconnectFromPeers:</option>
+	
+	<option value="//api/name/initWithDomain:type:name:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDomain:type:name:</option>
+	
+	<option value="//api/name/isActive">&nbsp;&nbsp;&nbsp;&nbsp;- isActive</option>
+	
+	<option value="//api/name/multicastData:toPeers:">&nbsp;&nbsp;&nbsp;&nbsp;- multicastData:toPeers:</option>
+	
+	<option value="//api/name/removePeer:">&nbsp;&nbsp;&nbsp;&nbsp;- removePeer:</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/stopByUser">&nbsp;&nbsp;&nbsp;&nbsp;- stopByUser</option>
+	
+	<option value="//api/name/stopWitReason:">&nbsp;&nbsp;&nbsp;&nbsp;- stopWitReason:</option>
+	
+	<option value="//api/name/unicastData:toPeer:">&nbsp;&nbsp;&nbsp;&nbsp;- unicastData:toPeer:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bonjourDomain">bonjourDomain</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bonjourName">bonjourName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bonjourType">bonjourType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/peers">peers</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/broadcastData:">broadcastData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectToPeers:">connectToPeers:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectedPeers">connectedPeers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionTestingEnable:">connectionTestingEnable:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnectFromPeers:">disconnectFromPeers:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDomain:type:name:">initWithDomain:type:name:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isActive">isActive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multicastData:toPeers:">multicastData:toPeers:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePeer:">removePeer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopByUser">stopByUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopWitReason:">stopWitReason:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unicastData:toPeer:">unicastData:toPeer:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PWBaseServer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PWBaseServer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/PWBasePeerDelegate.html">PWBasePeerDelegate</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PWBaseServer.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bonjourDomain">&nbsp;&nbsp;bonjourDomain</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bonjourType">&nbsp;&nbsp;bonjourType</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bonjourName">&nbsp;&nbsp;bonjourName</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/peers">&nbsp;&nbsp;peers</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDomain:type:name:">&ndash;&nbsp;initWithDomain:type:name:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopByUser">&ndash;&nbsp;stopByUser</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopWitReason:">&ndash;&nbsp;stopWitReason:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePeer:">&ndash;&nbsp;removePeer:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isActive">&ndash;&nbsp;isActive</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionTestingEnable:">&ndash;&nbsp;connectionTestingEnable:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectedPeers">&ndash;&nbsp;connectedPeers</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectToPeers:">&ndash;&nbsp;connectToPeers:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disconnectFromPeers:">&ndash;&nbsp;disconnectFromPeers:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unicastData:toPeer:">&ndash;&nbsp;unicastData:toPeer:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multicastData:toPeers:">&ndash;&nbsp;multicastData:toPeers:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/broadcastData:">&ndash;&nbsp;broadcastData:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bonjourDomain" title="bonjourDomain"></a>
+	<h3 class="subsubtitle method-title">bonjourDomain</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *bonjourDomain</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bonjourName" title="bonjourName"></a>
+	<h3 class="subsubtitle method-title">bonjourName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *bonjourName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bonjourType" title="bonjourType"></a>
+	<h3 class="subsubtitle method-title">bonjourType</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *bonjourType</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) PWDelegateController *delegate</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/peers" title="peers"></a>
+	<h3 class="subsubtitle method-title">peers</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSMutableArray *peers</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/broadcastData:" title="broadcastData:"></a>
+	<h3 class="subsubtitle method-title">broadcastData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)broadcastData:(NSData *)<em>data</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectToPeers:" title="connectToPeers:"></a>
+	<h3 class="subsubtitle method-title">connectToPeers:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connectToPeers:(NSArray *)<em>peers</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectedPeers" title="connectedPeers"></a>
+	<h3 class="subsubtitle method-title">connectedPeers</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)connectedPeers</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionTestingEnable:" title="connectionTestingEnable:"></a>
+	<h3 class="subsubtitle method-title">connectionTestingEnable:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)connectionTestingEnable:(BOOL)<em>enable</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disconnectFromPeers:" title="disconnectFromPeers:"></a>
+	<h3 class="subsubtitle method-title">disconnectFromPeers:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)disconnectFromPeers:(NSArray *)<em>peers</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDomain:type:name:" title="initWithDomain:type:name:"></a>
+	<h3 class="subsubtitle method-title">initWithDomain:type:name:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDomain:(NSString *)<em>domain</em> type:(NSString *)<em>type</em> name:(NSString *)<em>name</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isActive" title="isActive"></a>
+	<h3 class="subsubtitle method-title">isActive</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isActive</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multicastData:toPeers:" title="multicastData:toPeers:"></a>
+	<h3 class="subsubtitle method-title">multicastData:toPeers:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)multicastData:(NSData *)<em>data</em> toPeers:(NSArray *)<em>peer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removePeer:" title="removePeer:"></a>
+	<h3 class="subsubtitle method-title">removePeer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)removePeer:(PWBasePeer *)<em>peer</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopByUser" title="stopByUser"></a>
+	<h3 class="subsubtitle method-title">stopByUser</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopByUser</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopWitReason:" title="stopWitReason:"></a>
+	<h3 class="subsubtitle method-title">stopWitReason:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)stopWitReason:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unicastData:toPeer:" title="unicastData:toPeer:"></a>
+	<h3 class="subsubtitle method-title">unicastData:toPeer:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)unicastData:(NSData *)<em>data</em> toPeer:(PWBasePeer *)<em>peer</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 MSCodeFactory. All rights reserved. (Last updated: 2013-05-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

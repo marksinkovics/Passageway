@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="EfO-h4-leh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PWViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aec-UJ-cCv">
+                                <rect key="frame" x="82" y="117" width="155" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Remote Desktop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X1u-ZS-QjI" kind="push" identifier="showRemoteDesktop" id="lr1-Ny-lSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1AA-bg-rkv">
+                                <rect key="frame" x="83" y="241" width="155" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Extended Desktop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cac-qb-5rB" kind="push" identifier="showExtendedDesktop" id="CUL-3e-VKV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fIV-lV-vAi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="-248"/>
+        </scene>
+        <!--Client Finder Test Room View Controller - Test Room-->
+        <scene sceneID="hgV-Ge-uoO">
+            <objects>
+                <viewController storyboardIdentifier="PWClientFinderTestRoomViewController" title="Test Room" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RMN-gh-Bgj" customClass="PWClientFinderTestRoomViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIi-YC-MLl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="dDd-5d-RRp">
+                                <rect key="frame" x="7" y="162" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gLj-fZ-1E9">
+                                <rect key="frame" x="235" y="161" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SEND">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendMsg:" destination="RMN-gh-Bgj" eventType="touchUpInside" id="aTa-SD-ybq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="gkm-nN-oSi">
+                                <rect key="frame" x="0.0" y="-88" width="320" height="241"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.40000000000000002" contentMode="scaleToFill" id="wxT-i3-ssp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test Room" id="qR2-6r-rsR"/>
+                    <connections>
+                        <outlet property="msgImageView" destination="gkm-nN-oSi" id="7fW-uz-n6U"/>
+                        <outlet property="msgTextField" destination="dDd-5d-RRp" id="QTa-Y8-CIR"/>
+                        <outlet property="msgTextView" destination="wxT-i3-ssp" id="A2q-Ea-c6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fiU-pE-Q8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-884"/>
+        </scene>
+        <!--Client Finder View Controller - Client Finder-->
+        <scene sceneID="itG-25-4Se">
+            <objects>
+                <tableViewController storyboardIdentifier="PWClientFinderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6b-3y-7r3" customClass="PWClientFinderViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="sih-Uy-Lbt">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="PWClientFinderCellIdentifier" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PWClientFinderCellIdentifier" rowHeight="50" id="V2y-Dz-2pi" customClass="PWClientFinderCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="wGi-6N-jeC">
+                                            <rect key="frame" x="0.0" y="72" width="300" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eX9-V0-Dug">
+                                                    <rect key="frame" x="20" y="14" width="239" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="6nc-5f-6Z2">
+                                                    <rect key="frame" x="293" y="13" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.7236605989932765" green="1" blue="0.35125306533537648" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="backgroundView" destination="wGi-6N-jeC" id="XlE-yI-sYg"/>
+                                    <outlet property="connectingIndicator" destination="6nc-5f-6Z2" id="xXc-AI-Qll"/>
+                                    <outlet property="titleLabel" destination="eX9-V0-Dug" id="P6z-DD-I4Q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M6b-3y-7r3" id="lnP-Ia-dok"/>
+                            <outlet property="delegate" destination="M6b-3y-7r3" id="5Gf-Gu-WpD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Client Finder" id="f9F-cD-W62">
+                        <barButtonItem key="leftBarButtonItem" title="Hide" id="Y54-Y1-qwb">
+                            <connections>
+                                <action selector="dismissControllerAction:" destination="M6b-3y-7r3" id="Dgg-dP-YHk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Iy5-VY-wND">
+                            <connections>
+                                <action selector="refreshBrowsingDataAction:" destination="M6b-3y-7r3" id="Zt5-7E-xSx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilM-o1-gGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="-248"/>
+        </scene>
+        <!--Remote Desktop View Controller-->
+        <scene sceneID="2yc-w1-NhG">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" id="X1u-ZS-QjI" customClass="PWRemoteDesktopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfJ-f9-iuJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remote Desktop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x5N-h8-Ifv">
+                                <rect key="frame" x="97" y="229" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gKr-zB-9zF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="lww-dX-9mM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNc-C9-jBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="-884"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zEx-aj-uIk">
+            <objects>
+                <navigationController id="EfO-h4-leh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Xdm-kB-NNd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bws-wb-iwd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="bgz-PN-mlv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onf-IY-VuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-248"/>
+        </scene>
+        <!--Extended Desktop View Controller-->
+        <scene sceneID="zJh-hh-OeO">
+            <objects>
+                <viewController id="cac-qb-5rB" customClass="PWExtendedDesktopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3v-sB-M5H">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Extended Desktop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3vA-cP-iVj">
+                                <rect key="frame" x="91" y="229" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xv8-LF-goc">
+                                <rect key="frame" x="284" y="381" width="26" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="19-gear.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Wu-Mc-tjJ" kind="push" id="LAq-ob-E0K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3eA-OQ-phG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5s-5H-PWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="388"/>
+        </scene>
+        <!--Arrangement View Controller - Arrangement-->
+        <scene sceneID="pCK-5d-Rcq">
+            <objects>
+                <viewController id="6Wu-Mc-tjJ" customClass="PWArrangementViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1M4-jQ-aSl" customClass="PWArrangementCanvasView">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Arrangement" id="zoo-iM-6dw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Xw-tR-O0c">
+                            <connections>
+                                <action selector="addNewRandomDevice:" destination="6Wu-Mc-tjJ" id="BCZ-wx-hiQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Go-fV-tiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="19-gear.png" width="26" height="26"/>
+    </resources>
+    <classes>
+        <class className="PWArrangementCanvasView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWArrangementCanvasView.h"/>
+        </class>
+        <class className="PWArrangementViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWArrangementViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addNewRandomDevice:"/>
+            </relationships>
+        </class>
+        <class className="PWClientFinderCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWClientFinderCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="connectingIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PWClientFinderTestRoomViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWClientFinderTestRoomViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="sendMsg:"/>
+                <relationship kind="outlet" name="msgImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="msgTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="msgTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="PWClientFinderViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWClientFinderViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissControllerAction:"/>
+                <relationship kind="action" name="refreshBrowsingDataAction:"/>
+            </relationships>
+        </class>
+        <class className="PWDesktopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWDesktopViewController.h"/>
+        </class>
+        <class className="PWExtendedDesktopViewController" superclassName="PWDesktopViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWExtendedDesktopViewController.h"/>
+        </class>
+        <class className="PWRemoteDesktopViewController" superclassName="PWDesktopViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWRemoteDesktopViewController.h"/>
+        </class>
+        <class className="PWViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PWViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

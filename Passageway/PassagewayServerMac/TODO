@@ -1,0 +1,25 @@
+
+============================================================
+|	Framework
+============================================================
+
+Authentication
+	Collaboration.framework
+	
+============================================================
+|	Refactoring
+============================================================
+
+- extract startServer into new methods
+- rename PWClient to PWSession
+- rename PWServer's methods
+	- (void)connectToNetService:(NSNetService*)netService;
+	- (void)disconnectoFromClient:(PWClient*)client;
+		
+============================================================
+|	Resources
+============================================================
+
+Great icon library
+	http://www.greepit.com/open-source-icons-gcons/
+

@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'PWServeriOSFramework' target in the 'PWServeriOSFramework' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <CoreFoundation/CoreFoundation.h>
+
+#if TARGET_OS_IPHONE
+	#import <MobileCoreServices/MobileCoreServices.h>
+#else
+	#import <CoreServices/CoreServices.h>
+#endif
+
+	#import "MacroShared.h"
+
+#endif

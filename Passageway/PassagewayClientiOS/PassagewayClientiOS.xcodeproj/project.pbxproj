@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30A275B1618CFD600F3B6FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A275A1618CFD600F3B6FA /* UIKit.framework */; };
+		C30A275D1618CFD600F3B6FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A275C1618CFD600F3B6FA /* Foundation.framework */; };
+		C30A275F1618CFD600F3B6FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A275E1618CFD600F3B6FA /* CoreGraphics.framework */; };
+		C30A27651618CFD600F3B6FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C30A27631618CFD600F3B6FA /* InfoPlist.strings */; };
+		C30A27671618CFD600F3B6FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A27661618CFD600F3B6FA /* main.m */; };
+		C30A276B1618CFD600F3B6FA /* PWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A276A1618CFD600F3B6FA /* PWAppDelegate.m */; };
+		C30A276D1618CFD700F3B6FA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C30A276C1618CFD600F3B6FA /* Default.png */; };
+		C30A276F1618CFD700F3B6FA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C30A276E1618CFD700F3B6FA /* Default@2x.png */; };
+		C30A27711618CFD700F3B6FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C30A27701618CFD700F3B6FA /* Default-568h@2x.png */; };
+		C31DA581173A3A6E00DBC678 /* PWStateBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C31DA580173A3A6E00DBC678 /* PWStateBarButtonItem.m */; };
+		C32D88BA171B3F3500865800 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = C32D88B8171B3F3500865800 /* keyboard.png */; };
+		C32D88BB171B3F3500865800 /* keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32D88B9171B3F3500865800 /* keyboard@2x.png */; };
+		C334DA1B171C911E00EEFE93 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C334DA1A171C911E00EEFE93 /* CoreMotion.framework */; };
+		C334DA20171DF94000EEFE93 /* PWLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = C334DA1F171DF94000EEFE93 /* PWLogic.m */; };
+		C34D4257170B82EF0035E66A /* PWStatInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C34D4256170B82EF0035E66A /* PWStatInfoView.m */; };
+		C361F1AF1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C361F1AD1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.m */; };
+		C3879172170081220034A1E8 /* PWRemoteDesktopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3879171170081220034A1E8 /* PWRemoteDesktopView.m */; };
+		C38A28FC170F501D00F92479 /* PWRemoteMouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A28FB170F501D00F92479 /* PWRemoteMouseViewController.m */; };
+		C38A290F1711B47000F92479 /* PWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A290E1711B47000F92479 /* PWMainViewController.m */; };
+		C39015C9163C41E2004FF36C /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C39015C8163C41E2004FF36C /* libz.1.2.5.dylib */; };
+		C399419B16FA5B91000AA6AE /* PWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C399419A16FA5B91000AA6AE /* PWLoginViewController.m */; };
+		C39960691708CBF700E0610B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39960681708CBF700E0610B /* MobileCoreServices.framework */; };
+		C399606F1708CC8A00E0610B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C399606E1708CC8A00E0610B /* CFNetwork.framework */; };
+		C3A8541B16F8D82F002CF3BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8541D16F8D82F002CF3BB /* Localizable.strings */; };
+		C3A8542716F907C8002CF3BB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8542616F907C8002CF3BB /* MainStoryboard.storyboard */; };
+		C3A8542E16F921FF002CF3BB /* PWPeersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8542D16F921FF002CF3BB /* PWPeersViewController.m */; };
+		C3A8543416F922AB002CF3BB /* PWPeersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8543316F922AB002CF3BB /* PWPeersCell.m */; };
+		C3CDB43B16DD56EF000C70BC /* PWServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CDB43916DD56E9000C70BC /* PWServer.framework */; };
+		C3CDB43C16DD56F4000C70BC /* PWServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3CDB43916DD56E9000C70BC /* PWServer.framework */; };
+		C3CE9F47163AF3E7007CBE26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CE9F46163AF3E7007CBE26 /* QuartzCore.framework */; };
+		C3FB79461625F92F0078C860 /* PWRemoteDesktopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB79451625F92F0078C860 /* PWRemoteDesktopViewController.m */; };
+		C3FB794E1625F9F40078C860 /* PWRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FB794D1625F9F40078C860 /* PWRemoteViewController.m */; };
+		EEEF2A6E16FB0A8A007C934E /* PWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF2A6D16FB0A8A007C934E /* PWViewController.m */; };
+		EEEF2A7516FB0B86007C934E /* PWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF2A7416FB0B86007C934E /* PWTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C31A2A0F167E683500AEC23F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3CDB43C16DD56F4000C70BC /* PWServer.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C30A27561618CFD600F3B6FA /* PassagewayClientiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassagewayClientiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30A275A1618CFD600F3B6FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C30A275C1618CFD600F3B6FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C30A275E1618CFD600F3B6FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C30A27621618CFD600F3B6FA /* PassagewayClientiOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassagewayClientiOS-Info.plist"; sourceTree = "<group>"; };
+		C30A27641618CFD600F3B6FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C30A27661618CFD600F3B6FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C30A27681618CFD600F3B6FA /* PassagewayClientiOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassagewayClientiOS-Prefix.pch"; sourceTree = "<group>"; };
+		C30A27691618CFD600F3B6FA /* PWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWAppDelegate.h; sourceTree = "<group>"; };
+		C30A276A1618CFD600F3B6FA /* PWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWAppDelegate.m; sourceTree = "<group>"; };
+		C30A276C1618CFD600F3B6FA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C30A276E1618CFD700F3B6FA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C30A27701618CFD700F3B6FA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C31DA57F173A3A6E00DBC678 /* PWStateBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWStateBarButtonItem.h; path = View/PWStateBarButtonItem.h; sourceTree = "<group>"; };
+		C31DA580173A3A6E00DBC678 /* PWStateBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWStateBarButtonItem.m; path = View/PWStateBarButtonItem.m; sourceTree = "<group>"; };
+		C32D88B8171B3F3500865800 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = PassagewayClientiOS/Resources/Images/keyboard.png; sourceTree = "<group>"; };
+		C32D88B9171B3F3500865800 /* keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboard@2x.png"; path = "PassagewayClientiOS/Resources/Images/keyboard@2x.png"; sourceTree = "<group>"; };
+		C334DA1A171C911E00EEFE93 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		C334DA1E171DF94000EEFE93 /* PWLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWLogic.h; path = Logic/PWLogic.h; sourceTree = "<group>"; };
+		C334DA1F171DF94000EEFE93 /* PWLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWLogic.m; path = Logic/PWLogic.m; sourceTree = "<group>"; };
+		C34D4255170B82EF0035E66A /* PWStatInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWStatInfoView.h; path = View/PWStatInfoView.h; sourceTree = "<group>"; };
+		C34D4256170B82EF0035E66A /* PWStatInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWStatInfoView.m; path = View/PWStatInfoView.m; sourceTree = "<group>"; };
+		C361F1AD1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWTapNPanGestureRecognizer.m; path = Model/PWTapNPanGestureRecognizer.m; sourceTree = "<group>"; };
+		C361F1AE1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWTapNPanGestureRecognizer.h; path = Model/PWTapNPanGestureRecognizer.h; sourceTree = "<group>"; };
+		C3879170170081220034A1E8 /* PWRemoteDesktopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteDesktopView.h; path = Controller/Remote/Screensharing/PWRemoteDesktopView.h; sourceTree = "<group>"; };
+		C3879171170081220034A1E8 /* PWRemoteDesktopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteDesktopView.m; path = Controller/Remote/Screensharing/PWRemoteDesktopView.m; sourceTree = "<group>"; };
+		C38A28FA170F501D00F92479 /* PWRemoteMouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteMouseViewController.h; path = Controller/Remote/Mouse/PWRemoteMouseViewController.h; sourceTree = "<group>"; };
+		C38A28FB170F501D00F92479 /* PWRemoteMouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteMouseViewController.m; path = Controller/Remote/Mouse/PWRemoteMouseViewController.m; sourceTree = "<group>"; };
+		C38A290D1711B47000F92479 /* PWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMainViewController.h; path = Controller/Main/PWMainViewController.h; sourceTree = "<group>"; };
+		C38A290E1711B47000F92479 /* PWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMainViewController.m; path = Controller/Main/PWMainViewController.m; sourceTree = "<group>"; };
+		C39015C8163C41E2004FF36C /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		C399419916FA5B91000AA6AE /* PWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWLoginViewController.h; path = Controller/Input/Login/PWLoginViewController.h; sourceTree = "<group>"; };
+		C399419A16FA5B91000AA6AE /* PWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWLoginViewController.m; path = Controller/Input/Login/PWLoginViewController.m; sourceTree = "<group>"; };
+		C39960681708CBF700E0610B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C399606E1708CC8A00E0610B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C3A8541816F8D7C4002CF3BB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3A8541E16F8D833002CF3BB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3A8542516F8F0EF002CF3BB /* localize.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = localize.py; path = Scripts/localize.py; sourceTree = "<group>"; };
+		C3A8542616F907C8002CF3BB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Storyboard/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C3A8542C16F921FF002CF3BB /* PWPeersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWPeersViewController.h; path = Controller/Input/Peers/PWPeersViewController.h; sourceTree = "<group>"; };
+		C3A8542D16F921FF002CF3BB /* PWPeersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWPeersViewController.m; path = Controller/Input/Peers/PWPeersViewController.m; sourceTree = "<group>"; };
+		C3A8543216F922AB002CF3BB /* PWPeersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWPeersCell.h; path = Controller/Input/Peers/PWPeersCell.h; sourceTree = "<group>"; };
+		C3A8543316F922AB002CF3BB /* PWPeersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWPeersCell.m; path = Controller/Input/Peers/PWPeersCell.m; sourceTree = "<group>"; };
+		C3CDB43916DD56E9000C70BC /* PWServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PWServer.framework; path = PassagewayClientiOS/Frameworks/PWServer.framework; sourceTree = "<group>"; };
+		C3CE9F46163AF3E7007CBE26 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C3FB79441625F92F0078C860 /* PWRemoteDesktopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteDesktopViewController.h; path = Controller/Remote/Screensharing/PWRemoteDesktopViewController.h; sourceTree = "<group>"; };
+		C3FB79451625F92F0078C860 /* PWRemoteDesktopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteDesktopViewController.m; path = Controller/Remote/Screensharing/PWRemoteDesktopViewController.m; sourceTree = "<group>"; };
+		C3FB794C1625F9F40078C860 /* PWRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteViewController.h; path = Controller/Remote/PWRemoteViewController.h; sourceTree = "<group>"; };
+		C3FB794D1625F9F40078C860 /* PWRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteViewController.m; path = Controller/Remote/PWRemoteViewController.m; sourceTree = "<group>"; };
+		EEB5874C16FA10C0008A6B97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEEF2A6C16FB0A8A007C934E /* PWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWViewController.h; path = Controller/General/PWViewController.h; sourceTree = "<group>"; };
+		EEEF2A6D16FB0A8A007C934E /* PWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWViewController.m; path = Controller/General/PWViewController.m; sourceTree = "<group>"; };
+		EEEF2A7316FB0B86007C934E /* PWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWTableViewController.h; path = Controller/General/PWTableViewController.h; sourceTree = "<group>"; };
+		EEEF2A7416FB0B86007C934E /* PWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWTableViewController.m; path = Controller/General/PWTableViewController.m; sourceTree = "<group>"; };
+		EEEF2A7616FB0BB7007C934E /* PWInputViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PWInputViewControllerDelegate.h; path = Controller/Input/PWInputViewControllerDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30A27531618CFD600F3B6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C334DA1B171C911E00EEFE93 /* CoreMotion.framework in Frameworks */,
+				C399606F1708CC8A00E0610B /* CFNetwork.framework in Frameworks */,
+				C39960691708CBF700E0610B /* MobileCoreServices.framework in Frameworks */,
+				C3CDB43B16DD56EF000C70BC /* PWServer.framework in Frameworks */,
+				C39015C9163C41E2004FF36C /* libz.1.2.5.dylib in Frameworks */,
+				C3CE9F47163AF3E7007CBE26 /* QuartzCore.framework in Frameworks */,
+				C30A275B1618CFD600F3B6FA /* UIKit.framework in Frameworks */,
+				C30A275D1618CFD600F3B6FA /* Foundation.framework in Frameworks */,
+				C30A275F1618CFD600F3B6FA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30524E31626DED800752C9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C30524E51626DEE000752C9D /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C30524E51626DEE000752C9D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C32D88B8171B3F3500865800 /* keyboard.png */,
+				C32D88B9171B3F3500865800 /* keyboard@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C30A274B1618CFD600F3B6FA = {
+			isa = PBXGroup;
+			children = (
+				C30A27601618CFD600F3B6FA /* PassagewayClientiOS */,
+				C30524E31626DED800752C9D /* Resources */,
+				C30A27591618CFD600F3B6FA /* Frameworks */,
+				C30A27571618CFD600F3B6FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30A27571618CFD600F3B6FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30A27561618CFD600F3B6FA /* PassagewayClientiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30A27591618CFD600F3B6FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C334DA1A171C911E00EEFE93 /* CoreMotion.framework */,
+				C399606E1708CC8A00E0610B /* CFNetwork.framework */,
+				C39960681708CBF700E0610B /* MobileCoreServices.framework */,
+				C3CDB43916DD56E9000C70BC /* PWServer.framework */,
+				C39015C8163C41E2004FF36C /* libz.1.2.5.dylib */,
+				C3CE9F46163AF3E7007CBE26 /* QuartzCore.framework */,
+				C30A275A1618CFD600F3B6FA /* UIKit.framework */,
+				C30A275C1618CFD600F3B6FA /* Foundation.framework */,
+				C30A275E1618CFD600F3B6FA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30A27601618CFD600F3B6FA /* PassagewayClientiOS */ = {
+			isa = PBXGroup;
+			children = (
+				C361F1AC1725AD7F00E74DDF /* Model */,
+				C361F1AB1725AD4700E74DDF /* View */,
+				C334DA1D171DE10300EEFE93 /* Logic */,
+				C334DA1C171DE0EA00EEFE93 /* ViewControllers */,
+				C3FB79481625F9410078C860 /* UI */,
+				C30A27691618CFD600F3B6FA /* PWAppDelegate.h */,
+				C30A276A1618CFD600F3B6FA /* PWAppDelegate.m */,
+				C30A27611618CFD600F3B6FA /* Supporting Files */,
+			);
+			path = PassagewayClientiOS;
+			sourceTree = "<group>";
+		};
+		C30A27611618CFD600F3B6FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8542016F8DC7F002CF3BB /* Scripts */,
+				C3A8541D16F8D82F002CF3BB /* Localizable.strings */,
+				C30A27621618CFD600F3B6FA /* PassagewayClientiOS-Info.plist */,
+				C30A27631618CFD600F3B6FA /* InfoPlist.strings */,
+				C30A27661618CFD600F3B6FA /* main.m */,
+				C30A27681618CFD600F3B6FA /* PassagewayClientiOS-Prefix.pch */,
+				C30A276C1618CFD600F3B6FA /* Default.png */,
+				C30A276E1618CFD700F3B6FA /* Default@2x.png */,
+				C30A27701618CFD700F3B6FA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C31A2A21167E6CCD00AEC23F /* Screen sharing */ = {
+			isa = PBXGroup;
+			children = (
+				C387916F170081070034A1E8 /* View */,
+				C3FB79441625F92F0078C860 /* PWRemoteDesktopViewController.h */,
+				C3FB79451625F92F0078C860 /* PWRemoteDesktopViewController.m */,
+			);
+			name = "Screen sharing";
+			sourceTree = "<group>";
+		};
+		C334DA1C171DE0EA00EEFE93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF2A6B16FB0A65007C934E /* General */,
+				EEEF2A6F16FB0A95007C934E /* Input */,
+				C38A290C1711B44700F92479 /* Main */,
+				C3FB794F1625FA020078C860 /* Remote */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C334DA1D171DE10300EEFE93 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C334DA1E171DF94000EEFE93 /* PWLogic.h */,
+				C334DA1F171DF94000EEFE93 /* PWLogic.m */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		C361F1AB1725AD4700E74DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C34D4255170B82EF0035E66A /* PWStatInfoView.h */,
+				C34D4256170B82EF0035E66A /* PWStatInfoView.m */,
+				C31DA57F173A3A6E00DBC678 /* PWStateBarButtonItem.h */,
+				C31DA580173A3A6E00DBC678 /* PWStateBarButtonItem.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C361F1AC1725AD7F00E74DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C361F1AE1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.h */,
+				C361F1AD1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C387916F170081070034A1E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3879170170081220034A1E8 /* PWRemoteDesktopView.h */,
+				C3879171170081220034A1E8 /* PWRemoteDesktopView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C38A28F9170F4FE600F92479 /* Mouse */ = {
+			isa = PBXGroup;
+			children = (
+				C38A28FA170F501D00F92479 /* PWRemoteMouseViewController.h */,
+				C38A28FB170F501D00F92479 /* PWRemoteMouseViewController.m */,
+			);
+			name = Mouse;
+			sourceTree = "<group>";
+		};
+		C38A290C1711B44700F92479 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C38A290D1711B47000F92479 /* PWMainViewController.h */,
+				C38A290E1711B47000F92479 /* PWMainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C399419816FA5B70000AA6AE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C399419916FA5B91000AA6AE /* PWLoginViewController.h */,
+				C399419A16FA5B91000AA6AE /* PWLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		C3A8542016F8DC7F002CF3BB /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8542516F8F0EF002CF3BB /* localize.py */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		C3A8543016F9224B002CF3BB /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8543116F9228A002CF3BB /* View */,
+				C3A8542C16F921FF002CF3BB /* PWPeersViewController.h */,
+				C3A8542D16F921FF002CF3BB /* PWPeersViewController.m */,
+			);
+			name = Peers;
+			sourceTree = "<group>";
+		};
+		C3A8543116F9228A002CF3BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8543216F922AB002CF3BB /* PWPeersCell.h */,
+				C3A8543316F922AB002CF3BB /* PWPeersCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C3FB79481625F9410078C860 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8542616F907C8002CF3BB /* MainStoryboard.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C3FB794F1625FA020078C860 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				C3FB794C1625F9F40078C860 /* PWRemoteViewController.h */,
+				C3FB794D1625F9F40078C860 /* PWRemoteViewController.m */,
+				C31A2A21167E6CCD00AEC23F /* Screen sharing */,
+				C38A28F9170F4FE600F92479 /* Mouse */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		EEEF2A6B16FB0A65007C934E /* General */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF2A6C16FB0A8A007C934E /* PWViewController.h */,
+				EEEF2A6D16FB0A8A007C934E /* PWViewController.m */,
+				EEEF2A7316FB0B86007C934E /* PWTableViewController.h */,
+				EEEF2A7416FB0B86007C934E /* PWTableViewController.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		EEEF2A6F16FB0A95007C934E /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				EEEF2A7616FB0BB7007C934E /* PWInputViewControllerDelegate.h */,
+				C399419816FA5B70000AA6AE /* Login */,
+				C3A8543016F9224B002CF3BB /* Peers */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30A27551618CFD600F3B6FA /* PassagewayClientiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30A277D1618CFD700F3B6FA /* Build configuration list for PBXNativeTarget "PassagewayClientiOS" */;
+			buildPhases = (
+				C3A8541F16F8D85E002CF3BB /* ShellScript */,
+				C30A27521618CFD600F3B6FA /* Sources */,
+				C30A27531618CFD600F3B6FA /* Frameworks */,
+				C30A27541618CFD600F3B6FA /* Resources */,
+				C31A2A0F167E683500AEC23F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassagewayClientiOS;
+			productName = PassagewayClientiOS;
+			productReference = C30A27561618CFD600F3B6FA /* PassagewayClientiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30A274D1618CFD600F3B6FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PW;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = mscodefactory;
+			};
+			buildConfigurationList = C30A27501618CFD600F3B6FA /* Build configuration list for PBXProject "PassagewayClientiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				hu,
+			);
+			mainGroup = C30A274B1618CFD600F3B6FA;
+			productRefGroup = C30A27571618CFD600F3B6FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30A27551618CFD600F3B6FA /* PassagewayClientiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30A27541618CFD600F3B6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30A27651618CFD600F3B6FA /* InfoPlist.strings in Resources */,
+				C30A276D1618CFD700F3B6FA /* Default.png in Resources */,
+				C30A276F1618CFD700F3B6FA /* Default@2x.png in Resources */,
+				C30A27711618CFD700F3B6FA /* Default-568h@2x.png in Resources */,
+				C3A8541B16F8D82F002CF3BB /* Localizable.strings in Resources */,
+				C3A8542716F907C8002CF3BB /* MainStoryboard.storyboard in Resources */,
+				C32D88BA171B3F3500865800 /* keyboard.png in Resources */,
+				C32D88BB171B3F3500865800 /* keyboard@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3A8541F16F8D85E002CF3BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${SRCROOT}/PassagewayClientiOS\nfind . -name \"Localizable.strings\" -print | xargs -I {} echo \"iconv -f UTF-8 -t UTF-16 =(cat {})> {}\"  | zsh\npython ${SRCROOT}/PassagewayClientiOS/Scripts/localize.py\nfind . -name \"Localizable.strings\" -print | xargs -I {} echo \"iconv -f UTF-16 -t UTF-8 =(cat {})> {}\"  | zsh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30A27521618CFD600F3B6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30A27671618CFD600F3B6FA /* main.m in Sources */,
+				C30A276B1618CFD600F3B6FA /* PWAppDelegate.m in Sources */,
+				C3FB79461625F92F0078C860 /* PWRemoteDesktopViewController.m in Sources */,
+				C3FB794E1625F9F40078C860 /* PWRemoteViewController.m in Sources */,
+				C3A8542E16F921FF002CF3BB /* PWPeersViewController.m in Sources */,
+				C3A8543416F922AB002CF3BB /* PWPeersCell.m in Sources */,
+				C399419B16FA5B91000AA6AE /* PWLoginViewController.m in Sources */,
+				EEEF2A6E16FB0A8A007C934E /* PWViewController.m in Sources */,
+				EEEF2A7516FB0B86007C934E /* PWTableViewController.m in Sources */,
+				C3879172170081220034A1E8 /* PWRemoteDesktopView.m in Sources */,
+				C34D4257170B82EF0035E66A /* PWStatInfoView.m in Sources */,
+				C38A28FC170F501D00F92479 /* PWRemoteMouseViewController.m in Sources */,
+				C38A290F1711B47000F92479 /* PWMainViewController.m in Sources */,
+				C334DA20171DF94000EEFE93 /* PWLogic.m in Sources */,
+				C361F1AF1725AD8D00E74DDF /* PWTapNPanGestureRecognizer.m in Sources */,
+				C31DA581173A3A6E00DBC678 /* PWStateBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C30A27631618CFD600F3B6FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30A27641618CFD600F3B6FA /* en */,
+				C3A8541816F8D7C4002CF3BB /* hu */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3A8541D16F8D82F002CF3BB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A8541E16F8D833002CF3BB /* hu */,
+				EEB5874C16FA10C0008A6B97 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30A277B1618CFD700F3B6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Sinkovics (FB9BSFHLHA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Sinkovics (FB9BSFHLHA)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "0EFDB537-1878-45AD-B80E-5B7482A74D42";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0EFDB537-1878-45AD-B80E-5B7482A74D42";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C30A277C1618CFD700F3B6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Sinkovics (FB9BSFHLHA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Sinkovics (FB9BSFHLHA)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0EFDB537-1878-45AD-B80E-5B7482A74D42";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0EFDB537-1878-45AD-B80E-5B7482A74D42";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30A277E1618CFD700F3B6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PassagewayClientiOS/Frameworks/\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayClientiOS/PassagewayClientiOS-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PassagewayClientiOS/PassagewayClientiOS-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C30A277F1618CFD700F3B6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PassagewayClientiOS/Frameworks/\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayClientiOS/PassagewayClientiOS-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "PassagewayClientiOS/PassagewayClientiOS-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30A27501618CFD600F3B6FA /* Build configuration list for PBXProject "PassagewayClientiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30A277B1618CFD700F3B6FA /* Debug */,
+				C30A277C1618CFD700F3B6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30A277D1618CFD700F3B6FA /* Build configuration list for PBXNativeTarget "PassagewayClientiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30A277E1618CFD700F3B6FA /* Debug */,
+				C30A277F1618CFD700F3B6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30A274D1618CFD600F3B6FA /* Project object */;
+}

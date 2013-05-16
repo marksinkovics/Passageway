@@ -1,0 +1,624 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PWIPAddress Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PWServer framework </a></h1>
+				<a id="developerHome" href="../index.html">MSCodeFactory</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PWIPAddress Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/IPv6Address">&nbsp;&nbsp;&nbsp;&nbsp;IPv6Address</option>
+	
+	<option value="//api/name/IPv6Port">&nbsp;&nbsp;&nbsp;&nbsp;IPv6Port</option>
+	
+	<option value="//api/name/addresses">&nbsp;&nbsp;&nbsp;&nbsp;addresses</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/ipAddress">&nbsp;&nbsp;&nbsp;&nbsp;+ ipAddress</option>
+	
+	<option value="//api/name/ipAddressWithCFSocketNativeHandle:">&nbsp;&nbsp;&nbsp;&nbsp;+ ipAddressWithCFSocketNativeHandle:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithCFSocketNativeHandle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCFSocketNativeHandle:</option>
+	
+	<option value="//api/name/isEqualIPAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- isEqualIPAddress:</option>
+	
+	<option value="//api/name/isOnlyIPv6">&nbsp;&nbsp;&nbsp;&nbsp;- isOnlyIPv6</option>
+	
+	<option value="//api/name/updateIPsAddressAndPortFromData:">&nbsp;&nbsp;&nbsp;&nbsp;- updateIPsAddressAndPortFromData:</option>
+	
+	<option value="//api/name/updateIPsAddressAndPortFromSocketAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- updateIPsAddressAndPortFromSocketAddress:</option>
+	
+	<option value="//api/name/updateIPsAddressAndPortWithNetService:">&nbsp;&nbsp;&nbsp;&nbsp;- updateIPsAddressAndPortWithNetService:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IPv6Address">IPv6Address</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/IPv6Port">IPv6Port</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addresses">addresses</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ipAddress">ipAddress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ipAddressWithCFSocketNativeHandle:">ipAddressWithCFSocketNativeHandle:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCFSocketNativeHandle:">initWithCFSocketNativeHandle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isEqualIPAddress:">isEqualIPAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isOnlyIPv6">isOnlyIPv6</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateIPsAddressAndPortFromData:">updateIPsAddressAndPortFromData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateIPsAddressAndPortFromSocketAddress:">updateIPsAddressAndPortFromSocketAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateIPsAddressAndPortWithNetService:">updateIPsAddressAndPortWithNetService:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PWIPAddress Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PWIPAddress Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PWIPAddress.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class PWIPAddress</p><p>This is a discussion.<br/>
+It can span many lines or paragraphs.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/IPv6Address">&nbsp;&nbsp;IPv6Address</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/IPv6Port">&nbsp;&nbsp;IPv6Port</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addresses">&nbsp;&nbsp;addresses</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ipAddressWithCFSocketNativeHandle:">+&nbsp;ipAddressWithCFSocketNativeHandle:</a></code>
+		<span class="tooltip"><p>@method ipAddressWithCFSocketNativeHandle<br/>
+@param socketNativeHandle</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ipAddress">+&nbsp;ipAddress</a></code>
+		<span class="tooltip"><p>@method ipAddress</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCFSocketNativeHandle:">&ndash;&nbsp;initWithCFSocketNativeHandle:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateIPsAddressAndPortWithNetService:">&ndash;&nbsp;updateIPsAddressAndPortWithNetService:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateIPsAddressAndPortFromSocketAddress:">&ndash;&nbsp;updateIPsAddressAndPortFromSocketAddress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateIPsAddressAndPortFromData:">&ndash;&nbsp;updateIPsAddressAndPortFromData:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isEqualIPAddress:">&ndash;&nbsp;isEqualIPAddress:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isOnlyIPv6">&ndash;&nbsp;isOnlyIPv6</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/IPv6Address" title="IPv6Address"></a>
+	<h3 class="subsubtitle method-title">IPv6Address</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *, *IPv6Address</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/IPv6Port" title="IPv6Port"></a>
+	<h3 class="subsubtitle method-title">IPv6Port</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) unsigned int IPv4Port , IPv6Port</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addresses" title="addresses"></a>
+	<h3 class="subsubtitle method-title">addresses</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSMutableArray *addresses</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ipAddress" title="ipAddress"></a>
+	<h3 class="subsubtitle method-title">ipAddress</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@method ipAddress</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PWIPAddress *)ipAddress</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an intance of PWIPAddress</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@method ipAddress</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWIPAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ipAddressWithCFSocketNativeHandle:" title="ipAddressWithCFSocketNativeHandle:"></a>
+	<h3 class="subsubtitle method-title">ipAddressWithCFSocketNativeHandle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@method ipAddressWithCFSocketNativeHandle<br/>
+@param socketNativeHandle</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (PWIPAddress *)ipAddressWithCFSocketNativeHandle:(CFSocketNativeHandle)<em>socketNativeHandle</em></code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>an intance of PWIPAddress</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@method ipAddressWithCFSocketNativeHandle<br/>
+@param socketNativeHandle</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PWIPAddress.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCFSocketNativeHandle:" title="initWithCFSocketNativeHandle:"></a>
+	<h3 class="subsubtitle method-title">initWithCFSocketNativeHandle:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithCFSocketNativeHandle:(CFSocketNativeHandle)<em>socketNativeHandle</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isEqualIPAddress:" title="isEqualIPAddress:"></a>
+	<h3 class="subsubtitle method-title">isEqualIPAddress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isEqualIPAddress:(PWIPAddress *)<em>ipAddress</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isOnlyIPv6" title="isOnlyIPv6"></a>
+	<h3 class="subsubtitle method-title">isOnlyIPv6</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isOnlyIPv6</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateIPsAddressAndPortFromData:" title="updateIPsAddressAndPortFromData:"></a>
+	<h3 class="subsubtitle method-title">updateIPsAddressAndPortFromData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateIPsAddressAndPortFromData:(NSData *)<em>addressData</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateIPsAddressAndPortFromSocketAddress:" title="updateIPsAddressAndPortFromSocketAddress:"></a>
+	<h3 class="subsubtitle method-title">updateIPsAddressAndPortFromSocketAddress:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateIPsAddressAndPortFromSocketAddress:(struct sockaddr_in *)<em>socketAddress</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateIPsAddressAndPortWithNetService:" title="updateIPsAddressAndPortWithNetService:"></a>
+	<h3 class="subsubtitle method-title">updateIPsAddressAndPortWithNetService:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)updateIPsAddressAndPortWithNetService:(NSNetService *)<em>netService</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 MSCodeFactory. All rights reserved. (Last updated: 2013-05-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

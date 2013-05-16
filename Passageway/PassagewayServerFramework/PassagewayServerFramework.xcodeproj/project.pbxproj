@@ -1,0 +1,1829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C3267B8E167BAF5D0040B12B /* PWServer-Generate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3267B8F167BAF5D0040B12B /* Build configuration list for PBXAggregateTarget "PWServer-Generate" */;
+			buildPhases = (
+			);
+			dependencies = (
+				C3CDB43816DD559C000C70BC /* PBXTargetDependency */,
+				C3CDB43616DD559B000C70BC /* PBXTargetDependency */,
+			);
+			name = "PWServer-Generate";
+			productName = PWServeriOS;
+		};
+		C356FEB616A9FB2600D3CEB9 /* PWServer-Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C356FECC16A9FB2600D3CEB9 /* Build configuration list for PBXAggregateTarget "PWServer-Test" */;
+			buildPhases = (
+				C356FEB916A9FB2600D3CEB9 /* Build Static Libs */,
+				C356FECA16A9FB2600D3CEB9 /* Build Mac Target */,
+			);
+			dependencies = (
+			);
+			name = "PWServer-Test";
+			productName = PWServeriOS;
+		};
+		C37A112516E156960019540C /* PWServer-Generate Doc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C37A114C16E156960019540C /* Build configuration list for PBXAggregateTarget "PWServer-Generate Doc" */;
+			buildPhases = (
+				C37A114F16E156DC0019540C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "PWServer-Generate Doc";
+			productName = PWServeriOS;
+		};
+		C3CDB3DD16DD553D000C70BC /* PWServer-Generate Mac */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3CDB40616DD553D000C70BC /* Build configuration list for PBXAggregateTarget "PWServer-Generate Mac" */;
+			buildPhases = (
+				C3CDB40416DD553D000C70BC /* Build Mac Target */,
+				C3CDB40516DD553D000C70BC /* Copy Generated Mac Framework */,
+			);
+			dependencies = (
+			);
+			name = "PWServer-Generate Mac";
+			productName = PWServeriOS;
+		};
+		C3CDB40916DD554E000C70BC /* PWServer-Generate iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3CDB43216DD554E000C70BC /* Build configuration list for PBXAggregateTarget "PWServer-Generate iOS" */;
+			buildPhases = (
+				C3CDB40C16DD554E000C70BC /* Build Static Libs */,
+				C3CDB40D16DD554E000C70BC /* Build Universal Framework */,
+				C3CDB40E16DD554E000C70BC /* Copy Public Header Files */,
+				C3CDB42F16DD554E000C70BC /* Copy Generated iOS Frameworks */,
+			);
+			dependencies = (
+				C3CDB44A16DD63D1000C70BC /* PBXTargetDependency */,
+			);
+			name = "PWServer-Generate iOS";
+			productName = PWServeriOS;
+		};
+		C3FEF548168DF8F700D79A64 /* PWServer-Remove */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C3FEF549168DF8F700D79A64 /* Build configuration list for PBXAggregateTarget "PWServer-Remove" */;
+			buildPhases = (
+				C3FEF54C168DF8FC00D79A64 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "PWServer-Remove";
+			productName = "PWServer-Remove";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		C306174D1735AD7900B36352 /* PWBaseBufferHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C306174C1735AD7900B36352 /* PWBaseBufferHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C306174E1735AD7900B36352 /* PWBaseBufferHeader.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C306174C1735AD7900B36352 /* PWBaseBufferHeader.h */; };
+		C30685F316EA52400003B22B /* PWCommunicationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C30685F116EA52400003B22B /* PWCommunicationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30685F416EA52400003B22B /* PWCommunicationManager.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C30685F116EA52400003B22B /* PWCommunicationManager.h */; };
+		C30685F516EA52400003B22B /* PWCommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F216EA52400003B22B /* PWCommunicationManager.m */; };
+		C30685F616EA52400003B22B /* PWCommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F216EA52400003B22B /* PWCommunicationManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C30685FA16EA54440003B22B /* PWRemoteControlServerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C30685F816EA54440003B22B /* PWRemoteControlServerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30685FB16EA54440003B22B /* PWRemoteControlServerManager.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C30685F816EA54440003B22B /* PWRemoteControlServerManager.h */; };
+		C30685FC16EA54440003B22B /* PWRemoteControlServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F916EA54440003B22B /* PWRemoteControlServerManager.m */; };
+		C30685FD16EA54440003B22B /* PWRemoteControlServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F916EA54440003B22B /* PWRemoteControlServerManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C306860116EA5F8F0003B22B /* PWMsgControlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C30685FF16EA5F8F0003B22B /* PWMsgControlRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C306860216EA5F8F0003B22B /* PWMsgControlRequest.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C30685FF16EA5F8F0003B22B /* PWMsgControlRequest.h */; };
+		C306860316EA5F8F0003B22B /* PWMsgControlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860016EA5F8F0003B22B /* PWMsgControlRequest.m */; };
+		C306860416EA5F8F0003B22B /* PWMsgControlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860016EA5F8F0003B22B /* PWMsgControlRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C306860816EA5FB00003B22B /* PWMsgControlResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C306860616EA5FB00003B22B /* PWMsgControlResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C306860916EA5FB00003B22B /* PWMsgControlResponse.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C306860616EA5FB00003B22B /* PWMsgControlResponse.h */; };
+		C306860A16EA5FB00003B22B /* PWMsgControlResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860716EA5FB00003B22B /* PWMsgControlResponse.m */; };
+		C306860B16EA5FB00003B22B /* PWMsgControlResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860716EA5FB00003B22B /* PWMsgControlResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C31A29AD167E4C1D00AEC23F /* PWIPAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C31A29A5167E4C1D00AEC23F /* PWIPAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31A29AE167E4C1D00AEC23F /* PWIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C31A29A6167E4C1D00AEC23F /* PWIPAddress.m */; };
+		C31A29AF167E4C1D00AEC23F /* PWIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C31A29A6167E4C1D00AEC23F /* PWIPAddress.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C31B212A16FCE80300B148A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31B212916FCE80300B148A2 /* SystemConfiguration.framework */; };
+		C31B213516FD061600B148A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31B213416FD061500B148A2 /* SystemConfiguration.framework */; };
+		C31B213616FD063700B148A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31B212916FCE80300B148A2 /* SystemConfiguration.framework */; };
+		C31BFB34167BC802002FBEC6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31BFB33167BC802002FBEC6 /* CoreServices.framework */; };
+		C31BFB35167BC80B002FBEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31BFB31167BC7BF002FBEC6 /* Foundation.framework */; };
+		C31CD03316B5F94A00B234A0 /* PWBaseBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CD03116B5F94A00B234A0 /* PWBaseBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31CD03416B5F94A00B234A0 /* PWBaseBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03216B5F94A00B234A0 /* PWBaseBuffer.m */; };
+		C31CD03516B5F94A00B234A0 /* PWBaseBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03216B5F94A00B234A0 /* PWBaseBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C31CD03716B5FA0A00B234A0 /* PWBaseBufferDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CD03616B5FA0900B234A0 /* PWBaseBufferDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31CD03A16B5FD4100B234A0 /* PWTCPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CD03816B5FD4100B234A0 /* PWTCPBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31CD03B16B5FD4100B234A0 /* PWTCPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03916B5FD4100B234A0 /* PWTCPBuffer.m */; };
+		C31CD03C16B5FD4100B234A0 /* PWTCPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03916B5FD4100B234A0 /* PWTCPBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C31CD04516B5FE8F00B234A0 /* PWBasePeer.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CD04316B5FE8F00B234A0 /* PWBasePeer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31CD04616B5FE8F00B234A0 /* PWBasePeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD04416B5FE8F00B234A0 /* PWBasePeer.m */; };
+		C31CD04716B5FE8F00B234A0 /* PWBasePeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD04416B5FE8F00B234A0 /* PWBasePeer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C31CD04916B5FEC100B234A0 /* PWBasePeerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CD04816B5FEC100B234A0 /* PWBasePeerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D0916E3CE4700532800 /* MSJSONMapEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0116E3CE1200532800 /* MSJSONMapEntity.m */; };
+		C3242D0A16E3CE4700532800 /* MSJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0316E3CE1200532800 /* MSJSONMapper.m */; };
+		C3242D0B16E3CE4700532800 /* MSJSONMapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0516E3CE1200532800 /* MSJSONMapperManager.m */; };
+		C3242D0C16E3CE4700532800 /* MSJSONUnmapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0816E3CE1200532800 /* MSJSONUnmapper.m */; };
+		C3242D0D16E3CE6000532800 /* MSJSONMapEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D0016E3CE1200532800 /* MSJSONMapEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D0E16E3CE6000532800 /* MSJSONMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D0216E3CE1200532800 /* MSJSONMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D0F16E3CE6000532800 /* MSJSONMapperManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D0416E3CE1200532800 /* MSJSONMapperManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D1016E3CE6000532800 /* MSJSONMapperProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D0616E3CE1200532800 /* MSJSONMapperProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D1116E3CE6000532800 /* MSJSONUnmapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D0716E3CE1200532800 /* MSJSONUnmapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D1216E3CE6D00532800 /* MSJSONMapEntity.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D0016E3CE1200532800 /* MSJSONMapEntity.h */; };
+		C3242D1316E3CE6D00532800 /* MSJSONMapper.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D0216E3CE1200532800 /* MSJSONMapper.h */; };
+		C3242D1416E3CE6D00532800 /* MSJSONMapperManager.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D0416E3CE1200532800 /* MSJSONMapperManager.h */; };
+		C3242D1516E3CE6D00532800 /* MSJSONMapperProtocol.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D0616E3CE1200532800 /* MSJSONMapperProtocol.h */; };
+		C3242D1616E3CE6D00532800 /* MSJSONUnmapper.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D0716E3CE1200532800 /* MSJSONUnmapper.h */; };
+		C3242D1716E3CE7E00532800 /* MSJSONMapEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0116E3CE1200532800 /* MSJSONMapEntity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D1816E3CE7E00532800 /* MSJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0316E3CE1200532800 /* MSJSONMapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D1916E3CE7E00532800 /* MSJSONMapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0516E3CE1200532800 /* MSJSONMapperManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D1A16E3CE7E00532800 /* MSJSONUnmapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0816E3CE1200532800 /* MSJSONUnmapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D1D16E3CFB500532800 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D1B16E3CFB400532800 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D1E16E3CFB500532800 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D1C16E3CFB500532800 /* NSData+Base64.m */; };
+		C3242D1F16E3CFB500532800 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D1C16E3CFB500532800 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D2716E3D19500532800 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3242D2616E3D19500532800 /* SenTestingKit.framework */; };
+		C3242D3316E3D19500532800 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3242D3116E3D19500532800 /* InfoPlist.strings */; };
+		C3242D3D16E3D1BD00532800 /* PWDelegateControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D3C16E3D1BD00532800 /* PWDelegateControllerTest.m */; };
+		C3242D3E16E3D39200532800 /* PWDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9B9168AFA000023156F /* PWDelegateController.m */; };
+		C3242D4216E3E99E00532800 /* PWMsgAccessRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D4016E3E99E00532800 /* PWMsgAccessRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D4316E3E99E00532800 /* PWMsgAccessRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4116E3E99E00532800 /* PWMsgAccessRequest.m */; };
+		C3242D4416E3E99E00532800 /* PWMsgAccessRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4116E3E99E00532800 /* PWMsgAccessRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D4C16E3EC2B00532800 /* PWMsgAccessResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C3242D4A16E3EC2B00532800 /* PWMsgAccessResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3242D4D16E3EC2B00532800 /* PWMsgAccessResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4B16E3EC2B00532800 /* PWMsgAccessResponse.m */; };
+		C3242D4E16E3EC2B00532800 /* PWMsgAccessResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4B16E3EC2B00532800 /* PWMsgAccessResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3242D5416E3ED4000532800 /* PWMsgAccessRequest.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D4016E3E99E00532800 /* PWMsgAccessRequest.h */; };
+		C3242D5516E3ED4000532800 /* PWMsgAccessResponse.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D4A16E3EC2B00532800 /* PWMsgAccessResponse.h */; };
+		C3242D5716E3F38900532800 /* NSData+Base64.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3242D1B16E3CFB400532800 /* NSData+Base64.h */; };
+		C3267B83167BAF4B0040B12B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3267B82167BAF4B0040B12B /* Foundation.framework */; };
+		C33CD993168A8EF70023156F /* NSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD991168A8EF70023156F /* NSData+Compression.m */; };
+		C33CD994168A8EF70023156F /* NSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD991168A8EF70023156F /* NSData+Compression.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C33CD995168A8EF70023156F /* NSData+Compression.h in Headers */ = {isa = PBXBuildFile; fileRef = C33CD992168A8EF70023156F /* NSData+Compression.h */; settings = {ATTRIBUTES = (); }; };
+		C33CD998168A8F350023156F /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C33CD997168A8F350023156F /* libz.1.2.5.dylib */; };
+		C33CD9BA168AFA000023156F /* PWDelegateController.h in Headers */ = {isa = PBXBuildFile; fileRef = C33CD9B8168AFA000023156F /* PWDelegateController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C33CD9BB168AFA000023156F /* PWDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9B9168AFA000023156F /* PWDelegateController.m */; };
+		C33CD9BC168AFA000023156F /* PWDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9B9168AFA000023156F /* PWDelegateController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C33CD9C0168AFD480023156F /* PWBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C33CD9BE168AFD480023156F /* PWBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C33CD9C1168AFD480023156F /* PWBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9BF168AFD480023156F /* PWBaseManager.m */; };
+		C33CD9C2168AFD480023156F /* PWBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9BF168AFD480023156F /* PWBaseManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C33CD9EA168B7B0D0023156F /* MacroShared.h in Headers */ = {isa = PBXBuildFile; fileRef = C3698EBE168A517C0033943D /* MacroShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C356FED116A9FC7200D3CEB9 /* PWBaseServerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C356FED016A9FC7200D3CEB9 /* PWBaseServerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3698EC7168A63750033943D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31BFB2D167BC74B002FBEC6 /* CoreFoundation.framework */; };
+		C38A290617106AAD00F92479 /* PWPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = C38A290417106AAD00F92479 /* PWPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C38A290717106AAD00F92479 /* PWPointer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C38A290417106AAD00F92479 /* PWPointer.h */; };
+		C38A290817106AAD00F92479 /* PWPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A290517106AAD00F92479 /* PWPointer.m */; };
+		C38A290917106AAD00F92479 /* PWPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A290517106AAD00F92479 /* PWPointer.m */; };
+		C38A290B17106EDC00F92479 /* PWPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A290517106AAD00F92479 /* PWPointer.m */; };
+		C3964FB716BF0FBB0029825E /* AsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C3964FB516BF0FBB0029825E /* AsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3964FB816BF0FBB0029825E /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3964FB616BF0FBB0029825E /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C3964FB916BF0FBB0029825E /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3964FB616BF0FBB0029825E /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C399606B1708CC7100E0610B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C399606A1708CC7100E0610B /* CFNetwork.framework */; };
+		C399606D1708CC7800E0610B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C399606C1708CC7800E0610B /* CFNetwork.framework */; };
+		C3A48FCA16B8610C00157398 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A48FC916B8610C00157398 /* MobileCoreServices.framework */; };
+		C3A48FCC16B8611800157398 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A48FCB16B8611800157398 /* libz.1.2.5.dylib */; };
+		C3A48FCE16B8612100157398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A48FCD16B8612100157398 /* CoreFoundation.framework */; };
+		C3B25D9116B6FE3100C02CB8 /* PWUDPBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B25D8F16B6FE3100C02CB8 /* PWUDPBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3B25D9216B6FE3100C02CB8 /* PWUDPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9016B6FE3100C02CB8 /* PWUDPBuffer.m */; };
+		C3B25D9316B6FE3100C02CB8 /* PWUDPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9016B6FE3100C02CB8 /* PWUDPBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3B25D9616B6FFE500C02CB8 /* PWTCPPeer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B25D9416B6FFE500C02CB8 /* PWTCPPeer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3B25D9716B6FFE500C02CB8 /* PWTCPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9516B6FFE500C02CB8 /* PWTCPPeer.m */; };
+		C3B25D9816B6FFE500C02CB8 /* PWTCPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9516B6FFE500C02CB8 /* PWTCPPeer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3B25DB816B7191F00C02CB8 /* PWUDPPeer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B25DB616B7191F00C02CB8 /* PWUDPPeer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3B25DB916B7191F00C02CB8 /* PWUDPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25DB716B7191F00C02CB8 /* PWUDPPeer.m */; };
+		C3B25DBA16B7191F00C02CB8 /* PWUDPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25DB716B7191F00C02CB8 /* PWUDPPeer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3BA9D611707751A0000DA02 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BA9D5F170775190000DA02 /* AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3BA9D621707751A0000DA02 /* AsyncSocket.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3BA9D5F170775190000DA02 /* AsyncSocket.h */; };
+		C3BA9D631707751A0000DA02 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA9D60170775190000DA02 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C3BA9D641707751A0000DA02 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA9D60170775190000DA02 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C3BA9D6817079D670000DA02 /* PWTCPTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA9D6717079D670000DA02 /* PWTCPTest.m */; };
+		C3BA9D691707A28C0000DA02 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BA9D60170775190000DA02 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C3BA9D6A1707A2F40000DA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3964F9F16BF0EB00029825E /* Foundation.framework */; };
+		C3BA9D6C1707A3660000DA02 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BA9D6B1707A3650000DA02 /* CoreServices.framework */; };
+		C3C2E6D916A0756900CBB045 /* PWBaseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C2E6D716A0756900CBB045 /* PWBaseServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C2E6DA16A0756900CBB045 /* PWBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2E6D816A0756900CBB045 /* PWBaseServer.m */; };
+		C3C2E6DB16A0756900CBB045 /* PWBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2E6D816A0756900CBB045 /* PWBaseServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3C5E7EA16950AA900F9AC87 /* PWAbstractServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C5E7E816950AA900F9AC87 /* PWAbstractServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C5E7EB16950AA900F9AC87 /* PWAbstractServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7E916950AA900F9AC87 /* PWAbstractServer.m */; };
+		C3C5E7EC16950AA900F9AC87 /* PWAbstractServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7E916950AA900F9AC87 /* PWAbstractServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3C5E7F116950ACB00F9AC87 /* PWTCPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C5E7EF16950ACB00F9AC87 /* PWTCPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C5E7F216950ACB00F9AC87 /* PWTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F016950ACB00F9AC87 /* PWTCPServer.m */; };
+		C3C5E7F316950ACB00F9AC87 /* PWTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F016950ACB00F9AC87 /* PWTCPServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3C5E7F616950ADB00F9AC87 /* PWUDPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C5E7F416950ADB00F9AC87 /* PWUDPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C5E7F716950ADB00F9AC87 /* PWUDPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F516950ADB00F9AC87 /* PWUDPServer.m */; };
+		C3C5E7F816950ADB00F9AC87 /* PWUDPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F516950ADB00F9AC87 /* PWUDPServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3C5E7FB16950AF500F9AC87 /* PWBrowseServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C5E7F916950AF500F9AC87 /* PWBrowseServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C5E7FC16950AF500F9AC87 /* PWBrowseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7FA16950AF500F9AC87 /* PWBrowseServer.m */; };
+		C3C5E7FD16950AF500F9AC87 /* PWBrowseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7FA16950AF500F9AC87 /* PWBrowseServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3CDB40F16DD554E000C70BC /* PWBaseManager.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C33CD9BE168AFD480023156F /* PWBaseManager.h */; };
+		C3CDB41016DD554E000C70BC /* PWDelegateController.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C33CD9B8168AFA000023156F /* PWDelegateController.h */; };
+		C3CDB41316DD554E000C70BC /* NSString+Utilities.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3FEF540168D109700D79A64 /* NSString+Utilities.h */; };
+		C3CDB41416DD554E000C70BC /* PWBaseBufferDelegate.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31CD03616B5FA0900B234A0 /* PWBaseBufferDelegate.h */; };
+		C3CDB41516DD554E000C70BC /* PWBaseServerDelegate.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C356FED016A9FC7200D3CEB9 /* PWBaseServerDelegate.h */; };
+		C3CDB41616DD554E000C70BC /* PWBasePeerDelegate.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31CD04816B5FEC100B234A0 /* PWBasePeerDelegate.h */; };
+		C3CDB41716DD554E000C70BC /* PWBasePeer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31CD04316B5FE8F00B234A0 /* PWBasePeer.h */; };
+		C3CDB41816DD554E000C70BC /* PWBaseServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3C2E6D716A0756900CBB045 /* PWBaseServer.h */; };
+		C3CDB41916DD554E000C70BC /* PWBaseBuffer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31CD03116B5F94A00B234A0 /* PWBaseBuffer.h */; };
+		C3CDB41B16DD554E000C70BC /* PWIPAddress.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31A29A5167E4C1D00AEC23F /* PWIPAddress.h */; };
+		C3CDB41F16DD554E000C70BC /* PWAbstractServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3C5E7E816950AA900F9AC87 /* PWAbstractServer.h */; };
+		C3CDB42016DD554E000C70BC /* PWUDPBuffer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3B25D8F16B6FE3100C02CB8 /* PWUDPBuffer.h */; };
+		C3CDB42116DD554E000C70BC /* PWUDPServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3C5E7F416950ADB00F9AC87 /* PWUDPServer.h */; };
+		C3CDB42216DD554E000C70BC /* PWTCPBuffer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C31CD03816B5FD4100B234A0 /* PWTCPBuffer.h */; };
+		C3CDB42316DD554E000C70BC /* PWTCPPeer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3B25D9416B6FFE500C02CB8 /* PWTCPPeer.h */; };
+		C3CDB42416DD554E000C70BC /* PWUDPPeer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3B25DB616B7191F00C02CB8 /* PWUDPPeer.h */; };
+		C3CDB42516DD554E000C70BC /* PWTCPServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3C5E7EF16950ACB00F9AC87 /* PWTCPServer.h */; };
+		C3CDB42616DD554E000C70BC /* PWBrowseServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3C5E7F916950AF500F9AC87 /* PWBrowseServer.h */; };
+		C3CDB42816DD554E000C70BC /* MacroShared.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3698EBE168A517C0033943D /* MacroShared.h */; };
+		C3CDB42A16DD554E000C70BC /* Macro.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3CDB3D316DD4EEE000C70BC /* Macro.h */; };
+		C3CDB42B16DD554E000C70BC /* PWBrowseStrategy.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3F6467616BDE663001F90C5 /* PWBrowseStrategy.h */; };
+		C3CDB42C16DD554E000C70BC /* PWBrowseTCPStrategy.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3F6467816BDE743001F90C5 /* PWBrowseTCPStrategy.h */; };
+		C3CDB42D16DD554E000C70BC /* PWBrowseUDPStrategy.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3F6467C16BDE824001F90C5 /* PWBrowseUDPStrategy.h */; };
+		C3CDB42E16DD554E000C70BC /* AsyncUdpSocket.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3964FB516BF0FBB0029825E /* AsyncUdpSocket.h */; };
+		C3CDB44716DD5C0C000C70BC /* PWServer.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3CDB3D116DD4C73000C70BC /* PWServer.h */; };
+		C3CDB44816DD5C18000C70BC /* PWServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3CDB3D116DD4C73000C70BC /* PWServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3DC133916E7FD2C00E88C80 /* PWMsgBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DC133816E7FD2C00E88C80 /* PWMsgBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3DC133A16E7FD2C00E88C80 /* PWMsgBase.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3DC133816E7FD2C00E88C80 /* PWMsgBase.h */; };
+		C3E56BAD1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E56BAC1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3E56BAE1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3E56BAC1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h */; };
+		C3E56BB0171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E56BAF171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3E56BB1171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3E56BAF171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h */; };
+		C3F6467716BDE663001F90C5 /* PWBrowseStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F6467616BDE663001F90C5 /* PWBrowseStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F6467A16BDE743001F90C5 /* PWBrowseTCPStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F6467816BDE743001F90C5 /* PWBrowseTCPStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F6467B16BDE743001F90C5 /* PWBrowseTCPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467916BDE743001F90C5 /* PWBrowseTCPStrategy.m */; };
+		C3F6467E16BDE824001F90C5 /* PWBrowseUDPStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F6467C16BDE824001F90C5 /* PWBrowseUDPStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F6467F16BDE824001F90C5 /* PWBrowseUDPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467D16BDE824001F90C5 /* PWBrowseUDPStrategy.m */; };
+		C3F6468016BDE824001F90C5 /* PWBrowseUDPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467D16BDE824001F90C5 /* PWBrowseUDPStrategy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3F6468416BDED8B001F90C5 /* PWBrowseTCPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467916BDE743001F90C5 /* PWBrowseTCPStrategy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3FBBEB616F05D09000F87A7 /* MSJSONMapEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0116E3CE1200532800 /* MSJSONMapEntity.m */; };
+		C3FBBEB716F05D09000F87A7 /* MSJSONMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0316E3CE1200532800 /* MSJSONMapper.m */; };
+		C3FBBEB816F05D09000F87A7 /* MSJSONMapperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0516E3CE1200532800 /* MSJSONMapperManager.m */; };
+		C3FBBEB916F05D09000F87A7 /* MSJSONUnmapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D0816E3CE1200532800 /* MSJSONUnmapper.m */; };
+		C3FBBEBA16F05D09000F87A7 /* PWMsgAccessRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4116E3E99E00532800 /* PWMsgAccessRequest.m */; };
+		C3FBBEBB16F05D09000F87A7 /* PWMsgAccessResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D4B16E3EC2B00532800 /* PWMsgAccessResponse.m */; };
+		C3FBBEBC16F05D09000F87A7 /* PWMsgControlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860016EA5F8F0003B22B /* PWMsgControlRequest.m */; };
+		C3FBBEBD16F05D09000F87A7 /* PWMsgControlResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C306860716EA5FB00003B22B /* PWMsgControlResponse.m */; };
+		C3FBBEBE16F05D09000F87A7 /* PWBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD9BF168AFD480023156F /* PWBaseManager.m */; };
+		C3FBBEBF16F05D09000F87A7 /* PWCommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F216EA52400003B22B /* PWCommunicationManager.m */; };
+		C3FBBEC016F05D09000F87A7 /* PWRemoteControlServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C30685F916EA54440003B22B /* PWRemoteControlServerManager.m */; };
+		C3FBBEC116F05D09000F87A7 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3242D1C16E3CFB500532800 /* NSData+Base64.m */; };
+		C3FBBEC216F05D09000F87A7 /* NSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = C33CD991168A8EF70023156F /* NSData+Compression.m */; };
+		C3FBBEC316F05D09000F87A7 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEF541168D109700D79A64 /* NSString+Utilities.m */; };
+		C3FBBEC416F05D09000F87A7 /* PWIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C31A29A6167E4C1D00AEC23F /* PWIPAddress.m */; };
+		C3FBBEC516F05D09000F87A7 /* PWBasePeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD04416B5FE8F00B234A0 /* PWBasePeer.m */; };
+		C3FBBEC616F05D09000F87A7 /* PWBaseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C2E6D816A0756900CBB045 /* PWBaseServer.m */; };
+		C3FBBEC716F05D09000F87A7 /* PWBaseBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03216B5F94A00B234A0 /* PWBaseBuffer.m */; };
+		C3FBBEC816F05D09000F87A7 /* PWAbstractServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7E916950AA900F9AC87 /* PWAbstractServer.m */; };
+		C3FBBEC916F05D09000F87A7 /* PWUDPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9016B6FE3100C02CB8 /* PWUDPBuffer.m */; };
+		C3FBBECA16F05D09000F87A7 /* PWUDPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25DB716B7191F00C02CB8 /* PWUDPPeer.m */; };
+		C3FBBECB16F05D09000F87A7 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C3964FB616BF0FBB0029825E /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C3FBBECC16F05D09000F87A7 /* PWUDPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F516950ADB00F9AC87 /* PWUDPServer.m */; };
+		C3FBBECD16F05D09000F87A7 /* PWTCPBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = C31CD03916B5FD4100B234A0 /* PWTCPBuffer.m */; };
+		C3FBBECE16F05D09000F87A7 /* PWTCPPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B25D9516B6FFE500C02CB8 /* PWTCPPeer.m */; };
+		C3FBBECF16F05D09000F87A7 /* PWTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7F016950ACB00F9AC87 /* PWTCPServer.m */; };
+		C3FBBED016F05D09000F87A7 /* PWBrowseTCPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467916BDE743001F90C5 /* PWBrowseTCPStrategy.m */; };
+		C3FBBED116F05D09000F87A7 /* PWBrowseUDPStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F6467D16BDE824001F90C5 /* PWBrowseUDPStrategy.m */; };
+		C3FBBED216F05D09000F87A7 /* PWBrowseServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5E7FA16950AF500F9AC87 /* PWBrowseServer.m */; };
+		C3FBBED916F05DEF000F87A7 /* PWConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBBED816F05DEF000F87A7 /* PWConnectionTest.m */; };
+		C3FBBEDC16F05EFD000F87A7 /* PWRemoteControlClientManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FBBEDA16F05EFD000F87A7 /* PWRemoteControlClientManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FBBEDD16F05EFD000F87A7 /* PWRemoteControlClientManager.h in Copy Public Header Files */ = {isa = PBXBuildFile; fileRef = C3FBBEDA16F05EFD000F87A7 /* PWRemoteControlClientManager.h */; };
+		C3FBBEDE16F05EFD000F87A7 /* PWRemoteControlClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBBEDB16F05EFD000F87A7 /* PWRemoteControlClientManager.m */; };
+		C3FBBEDF16F05EFD000F87A7 /* PWRemoteControlClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBBEDB16F05EFD000F87A7 /* PWRemoteControlClientManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C3FBBEE316F07662000F87A7 /* PWManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBBEE216F07662000F87A7 /* PWManagerTest.m */; };
+		C3FBBEE516F078E0000F87A7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FBBEE416F078E0000F87A7 /* libz.1.2.5.dylib */; };
+		C3FBBEE616F078FB000F87A7 /* PWRemoteControlClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FBBEDB16F05EFD000F87A7 /* PWRemoteControlClientManager.m */; };
+		C3FEF542168D109700D79A64 /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FEF540168D109700D79A64 /* NSString+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FEF543168D109700D79A64 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEF541168D109700D79A64 /* NSString+Utilities.m */; };
+		C3FEF544168D109700D79A64 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEF541168D109700D79A64 /* NSString+Utilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3CDB43516DD559B000C70BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C316A2CA167B923D0077D397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CDB3DD16DD553D000C70BC;
+			remoteInfo = "PWServer-Generate Mac";
+		};
+		C3CDB43716DD559C000C70BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C316A2CA167B923D0077D397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3CDB40916DD554E000C70BC;
+			remoteInfo = "PWServer-Generate iOS";
+		};
+		C3CDB44916DD63D1000C70BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C316A2CA167B923D0077D397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3FEF548168DF8F700D79A64;
+			remoteInfo = "PWServer-Remove";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3CDB40E16DD554E000C70BC /* Copy Public Header Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${FRAMEWORK_NAME}.framework/Versions/A/Headers";
+			dstSubfolderSpec = 0;
+			files = (
+				C3CDB40F16DD554E000C70BC /* PWBaseManager.h in Copy Public Header Files */,
+				C3CDB41016DD554E000C70BC /* PWDelegateController.h in Copy Public Header Files */,
+				C3CDB41316DD554E000C70BC /* NSString+Utilities.h in Copy Public Header Files */,
+				C3CDB41416DD554E000C70BC /* PWBaseBufferDelegate.h in Copy Public Header Files */,
+				C3CDB41516DD554E000C70BC /* PWBaseServerDelegate.h in Copy Public Header Files */,
+				C3CDB41616DD554E000C70BC /* PWBasePeerDelegate.h in Copy Public Header Files */,
+				C3CDB41716DD554E000C70BC /* PWBasePeer.h in Copy Public Header Files */,
+				C3CDB41816DD554E000C70BC /* PWBaseServer.h in Copy Public Header Files */,
+				C3CDB41916DD554E000C70BC /* PWBaseBuffer.h in Copy Public Header Files */,
+				C3CDB41B16DD554E000C70BC /* PWIPAddress.h in Copy Public Header Files */,
+				C3CDB41F16DD554E000C70BC /* PWAbstractServer.h in Copy Public Header Files */,
+				C3CDB42016DD554E000C70BC /* PWUDPBuffer.h in Copy Public Header Files */,
+				C3CDB42116DD554E000C70BC /* PWUDPServer.h in Copy Public Header Files */,
+				C3CDB42216DD554E000C70BC /* PWTCPBuffer.h in Copy Public Header Files */,
+				C3CDB42316DD554E000C70BC /* PWTCPPeer.h in Copy Public Header Files */,
+				C3CDB42416DD554E000C70BC /* PWUDPPeer.h in Copy Public Header Files */,
+				C3CDB42516DD554E000C70BC /* PWTCPServer.h in Copy Public Header Files */,
+				C3CDB42616DD554E000C70BC /* PWBrowseServer.h in Copy Public Header Files */,
+				C3CDB42816DD554E000C70BC /* MacroShared.h in Copy Public Header Files */,
+				C3CDB42A16DD554E000C70BC /* Macro.h in Copy Public Header Files */,
+				C3CDB42B16DD554E000C70BC /* PWBrowseStrategy.h in Copy Public Header Files */,
+				C3CDB42C16DD554E000C70BC /* PWBrowseTCPStrategy.h in Copy Public Header Files */,
+				C3CDB42D16DD554E000C70BC /* PWBrowseUDPStrategy.h in Copy Public Header Files */,
+				C3CDB42E16DD554E000C70BC /* AsyncUdpSocket.h in Copy Public Header Files */,
+				C3CDB44716DD5C0C000C70BC /* PWServer.h in Copy Public Header Files */,
+				C3242D1216E3CE6D00532800 /* MSJSONMapEntity.h in Copy Public Header Files */,
+				C3242D1316E3CE6D00532800 /* MSJSONMapper.h in Copy Public Header Files */,
+				C3242D1416E3CE6D00532800 /* MSJSONMapperManager.h in Copy Public Header Files */,
+				C3242D1516E3CE6D00532800 /* MSJSONMapperProtocol.h in Copy Public Header Files */,
+				C3242D1616E3CE6D00532800 /* MSJSONUnmapper.h in Copy Public Header Files */,
+				C3242D5416E3ED4000532800 /* PWMsgAccessRequest.h in Copy Public Header Files */,
+				C3242D5516E3ED4000532800 /* PWMsgAccessResponse.h in Copy Public Header Files */,
+				C3242D5716E3F38900532800 /* NSData+Base64.h in Copy Public Header Files */,
+				C3DC133A16E7FD2C00E88C80 /* PWMsgBase.h in Copy Public Header Files */,
+				C30685F416EA52400003B22B /* PWCommunicationManager.h in Copy Public Header Files */,
+				C30685FB16EA54440003B22B /* PWRemoteControlServerManager.h in Copy Public Header Files */,
+				C306860216EA5F8F0003B22B /* PWMsgControlRequest.h in Copy Public Header Files */,
+				C306860916EA5FB00003B22B /* PWMsgControlResponse.h in Copy Public Header Files */,
+				C3FBBEDD16F05EFD000F87A7 /* PWRemoteControlClientManager.h in Copy Public Header Files */,
+				C3BA9D621707751A0000DA02 /* AsyncSocket.h in Copy Public Header Files */,
+				C38A290717106AAD00F92479 /* PWPointer.h in Copy Public Header Files */,
+				C3E56BAE1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h in Copy Public Header Files */,
+				C3E56BB1171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h in Copy Public Header Files */,
+				C306174E1735AD7900B36352 /* PWBaseBufferHeader.h in Copy Public Header Files */,
+			);
+			name = "Copy Public Header Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C306174C1735AD7900B36352 /* PWBaseBufferHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseBufferHeader.h; path = Shared/Network/Server/PWBaseBufferHeader.h; sourceTree = "<group>"; };
+		C30685F116EA52400003B22B /* PWCommunicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWCommunicationManager.h; path = Shared/Manager/PWCommunicationManager.h; sourceTree = "<group>"; };
+		C30685F216EA52400003B22B /* PWCommunicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWCommunicationManager.m; path = Shared/Manager/PWCommunicationManager.m; sourceTree = "<group>"; };
+		C30685F816EA54440003B22B /* PWRemoteControlServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteControlServerManager.h; path = Shared/Manager/PWRemoteControlServerManager.h; sourceTree = "<group>"; };
+		C30685F916EA54440003B22B /* PWRemoteControlServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteControlServerManager.m; path = Shared/Manager/PWRemoteControlServerManager.m; sourceTree = "<group>"; };
+		C30685FF16EA5F8F0003B22B /* PWMsgControlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMsgControlRequest.h; path = Shared/Model/PWMsgControlRequest.h; sourceTree = "<group>"; };
+		C306860016EA5F8F0003B22B /* PWMsgControlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMsgControlRequest.m; path = Shared/Model/PWMsgControlRequest.m; sourceTree = "<group>"; };
+		C306860616EA5FB00003B22B /* PWMsgControlResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMsgControlResponse.h; path = Shared/Model/PWMsgControlResponse.h; sourceTree = "<group>"; };
+		C306860716EA5FB00003B22B /* PWMsgControlResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMsgControlResponse.m; path = Shared/Model/PWMsgControlResponse.m; sourceTree = "<group>"; };
+		C31A298F167DF36400AEC23F /* PWServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PWServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31A2990167DF36400AEC23F /* PWServer.framework */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = PWServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31A29A5167E4C1D00AEC23F /* PWIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWIPAddress.h; path = Shared/Network/Model/IPAddress/PWIPAddress.h; sourceTree = "<group>"; };
+		C31A29A6167E4C1D00AEC23F /* PWIPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWIPAddress.m; path = Shared/Network/Model/IPAddress/PWIPAddress.m; sourceTree = "<group>"; };
+		C31B212916FCE80300B148A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C31B213416FD061500B148A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		C31BFB2D167BC74B002FBEC6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C31BFB31167BC7BF002FBEC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C31BFB33167BC802002FBEC6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C31CD03116B5F94A00B234A0 /* PWBaseBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseBuffer.h; path = Shared/Network/Model/Buffer/PWBaseBuffer.h; sourceTree = "<group>"; };
+		C31CD03216B5F94A00B234A0 /* PWBaseBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBaseBuffer.m; path = Shared/Network/Model/Buffer/PWBaseBuffer.m; sourceTree = "<group>"; };
+		C31CD03616B5FA0900B234A0 /* PWBaseBufferDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseBufferDelegate.h; path = Shared/Network/Model/Buffer/PWBaseBufferDelegate.h; sourceTree = "<group>"; };
+		C31CD03816B5FD4100B234A0 /* PWTCPBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWTCPBuffer.h; path = Shared/Network/Model/Buffer/PWTCPBuffer.h; sourceTree = "<group>"; };
+		C31CD03916B5FD4100B234A0 /* PWTCPBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWTCPBuffer.m; path = Shared/Network/Model/Buffer/PWTCPBuffer.m; sourceTree = "<group>"; };
+		C31CD04316B5FE8F00B234A0 /* PWBasePeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBasePeer.h; path = Shared/Network/Model/Peer/PWBasePeer.h; sourceTree = "<group>"; };
+		C31CD04416B5FE8F00B234A0 /* PWBasePeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBasePeer.m; path = Shared/Network/Model/Peer/PWBasePeer.m; sourceTree = "<group>"; };
+		C31CD04816B5FEC100B234A0 /* PWBasePeerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBasePeerDelegate.h; path = Shared/Network/Model/Peer/PWBasePeerDelegate.h; sourceTree = "<group>"; };
+		C3242D0016E3CE1200532800 /* MSJSONMapEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONMapEntity.h; sourceTree = "<group>"; };
+		C3242D0116E3CE1200532800 /* MSJSONMapEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONMapEntity.m; sourceTree = "<group>"; };
+		C3242D0216E3CE1200532800 /* MSJSONMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONMapper.h; sourceTree = "<group>"; };
+		C3242D0316E3CE1200532800 /* MSJSONMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONMapper.m; sourceTree = "<group>"; };
+		C3242D0416E3CE1200532800 /* MSJSONMapperManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONMapperManager.h; sourceTree = "<group>"; };
+		C3242D0516E3CE1200532800 /* MSJSONMapperManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONMapperManager.m; sourceTree = "<group>"; };
+		C3242D0616E3CE1200532800 /* MSJSONMapperProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONMapperProtocol.h; sourceTree = "<group>"; };
+		C3242D0716E3CE1200532800 /* MSJSONUnmapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSJSONUnmapper.h; sourceTree = "<group>"; };
+		C3242D0816E3CE1200532800 /* MSJSONUnmapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSJSONUnmapper.m; sourceTree = "<group>"; };
+		C3242D1B16E3CFB400532800 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "Shared/Category/NSData+Base64.h"; sourceTree = "<group>"; };
+		C3242D1C16E3CFB500532800 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "Shared/Category/NSData+Base64.m"; sourceTree = "<group>"; };
+		C3242D2516E3D19500532800 /* PWServerTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWServerTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3242D2616E3D19500532800 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3242D2B16E3D19500532800 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C3242D2C16E3D19500532800 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3242D2D16E3D19500532800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3242D3016E3D19500532800 /* PWServerTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PWServerTest-Info.plist"; sourceTree = "<group>"; };
+		C3242D3216E3D19500532800 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3242D3716E3D19500532800 /* PWServerTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PWServerTest-Prefix.pch"; sourceTree = "<group>"; };
+		C3242D3B16E3D1BD00532800 /* PWDelegateControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDelegateControllerTest.h; sourceTree = "<group>"; };
+		C3242D3C16E3D1BD00532800 /* PWDelegateControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDelegateControllerTest.m; sourceTree = "<group>"; };
+		C3242D4016E3E99E00532800 /* PWMsgAccessRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMsgAccessRequest.h; path = Shared/Model/PWMsgAccessRequest.h; sourceTree = "<group>"; };
+		C3242D4116E3E99E00532800 /* PWMsgAccessRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMsgAccessRequest.m; path = Shared/Model/PWMsgAccessRequest.m; sourceTree = "<group>"; };
+		C3242D4A16E3EC2B00532800 /* PWMsgAccessResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMsgAccessResponse.h; path = Shared/Model/PWMsgAccessResponse.h; sourceTree = "<group>"; };
+		C3242D4B16E3EC2B00532800 /* PWMsgAccessResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMsgAccessResponse.m; path = Shared/Model/PWMsgAccessResponse.m; sourceTree = "<group>"; };
+		C3267B82167BAF4B0040B12B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C33CD991168A8EF70023156F /* NSData+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Compression.m"; path = "Shared/Category/NSData+Compression.m"; sourceTree = "<group>"; };
+		C33CD992168A8EF70023156F /* NSData+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Compression.h"; path = "Shared/Category/NSData+Compression.h"; sourceTree = "<group>"; };
+		C33CD997168A8F350023156F /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/lib/libz.1.2.5.dylib; sourceTree = DEVELOPER_DIR; };
+		C33CD9B8168AFA000023156F /* PWDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWDelegateController.h; path = Shared/Delegate/PWDelegateController.h; sourceTree = "<group>"; };
+		C33CD9B9168AFA000023156F /* PWDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWDelegateController.m; path = Shared/Delegate/PWDelegateController.m; sourceTree = "<group>"; };
+		C33CD9BE168AFD480023156F /* PWBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseManager.h; path = Shared/Manager/PWBaseManager.h; sourceTree = "<group>"; };
+		C33CD9BF168AFD480023156F /* PWBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBaseManager.m; path = Shared/Manager/PWBaseManager.m; sourceTree = "<group>"; };
+		C356FED016A9FC7200D3CEB9 /* PWBaseServerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseServerDelegate.h; path = Shared/Network/Server/PWBaseServerDelegate.h; sourceTree = "<group>"; };
+		C3698EBE168A517C0033943D /* MacroShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MacroShared.h; path = Shared/MacroShared.h; sourceTree = "<group>"; };
+		C38A290417106AAD00F92479 /* PWPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWPointer.h; path = Shared/Delegate/PWPointer.h; sourceTree = "<group>"; };
+		C38A290517106AAD00F92479 /* PWPointer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWPointer.m; path = Shared/Delegate/PWPointer.m; sourceTree = "<group>"; };
+		C3964F9F16BF0EB00029825E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3964FB516BF0FBB0029825E /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Shared/Network/Server/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		C3964FB616BF0FBB0029825E /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = Shared/Network/Server/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		C399606A1708CC7100E0610B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C399606C1708CC7800E0610B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C3A48FC916B8610C00157398 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C3A48FCB16B8611800157398 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libz.1.2.5.dylib; sourceTree = DEVELOPER_DIR; };
+		C3A48FCD16B8612100157398 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C3B25D8F16B6FE3100C02CB8 /* PWUDPBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWUDPBuffer.h; path = Shared/Network/Model/Buffer/PWUDPBuffer.h; sourceTree = "<group>"; };
+		C3B25D9016B6FE3100C02CB8 /* PWUDPBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWUDPBuffer.m; path = Shared/Network/Model/Buffer/PWUDPBuffer.m; sourceTree = "<group>"; };
+		C3B25D9416B6FFE500C02CB8 /* PWTCPPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWTCPPeer.h; path = Shared/Network/Model/Peer/PWTCPPeer.h; sourceTree = "<group>"; };
+		C3B25D9516B6FFE500C02CB8 /* PWTCPPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWTCPPeer.m; path = Shared/Network/Model/Peer/PWTCPPeer.m; sourceTree = "<group>"; };
+		C3B25DB616B7191F00C02CB8 /* PWUDPPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWUDPPeer.h; path = Shared/Network/Model/Peer/PWUDPPeer.h; sourceTree = "<group>"; };
+		C3B25DB716B7191F00C02CB8 /* PWUDPPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWUDPPeer.m; path = Shared/Network/Model/Peer/PWUDPPeer.m; sourceTree = "<group>"; };
+		C3BA9D5F170775190000DA02 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = Shared/Network/Server/AsyncSocket.h; sourceTree = "<group>"; };
+		C3BA9D60170775190000DA02 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = Shared/Network/Server/AsyncSocket.m; sourceTree = "<group>"; };
+		C3BA9D6617079D670000DA02 /* PWTCPTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWTCPTest.h; sourceTree = "<group>"; };
+		C3BA9D6717079D670000DA02 /* PWTCPTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWTCPTest.m; sourceTree = "<group>"; };
+		C3BA9D6B1707A3650000DA02 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		C3C2E6D716A0756900CBB045 /* PWBaseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBaseServer.h; path = Shared/Network/Server/PWBaseServer.h; sourceTree = "<group>"; };
+		C3C2E6D816A0756900CBB045 /* PWBaseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBaseServer.m; path = Shared/Network/Server/PWBaseServer.m; sourceTree = "<group>"; };
+		C3C5E7E816950AA900F9AC87 /* PWAbstractServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWAbstractServer.h; path = Shared/Network/Server/PWAbstractServer.h; sourceTree = "<group>"; };
+		C3C5E7E916950AA900F9AC87 /* PWAbstractServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWAbstractServer.m; path = Shared/Network/Server/PWAbstractServer.m; sourceTree = "<group>"; };
+		C3C5E7EF16950ACB00F9AC87 /* PWTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWTCPServer.h; path = Shared/Network/Server/PWTCPServer.h; sourceTree = "<group>"; };
+		C3C5E7F016950ACB00F9AC87 /* PWTCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWTCPServer.m; path = Shared/Network/Server/PWTCPServer.m; sourceTree = "<group>"; };
+		C3C5E7F416950ADB00F9AC87 /* PWUDPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWUDPServer.h; path = Shared/Network/Server/PWUDPServer.h; sourceTree = "<group>"; };
+		C3C5E7F516950ADB00F9AC87 /* PWUDPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWUDPServer.m; path = Shared/Network/Server/PWUDPServer.m; sourceTree = "<group>"; };
+		C3C5E7F916950AF500F9AC87 /* PWBrowseServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBrowseServer.h; path = Shared/Network/Server/PWBrowseServer.h; sourceTree = "<group>"; };
+		C3C5E7FA16950AF500F9AC87 /* PWBrowseServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBrowseServer.m; path = Shared/Network/Server/PWBrowseServer.m; sourceTree = "<group>"; };
+		C3CDB3D116DD4C73000C70BC /* PWServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PWServer.h; path = PWServer/PWServer.h; sourceTree = "<group>"; };
+		C3CDB3D216DD4D55000C70BC /* PWServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PWServer-Prefix.pch"; path = "PWServer/PWServer-Prefix.pch"; sourceTree = "<group>"; };
+		C3CDB3D316DD4EEE000C70BC /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = PWServer/Macro.h; sourceTree = "<group>"; };
+		C3CDB3D816DD4FB0000C70BC /* PWServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PWServer-Info.plist"; path = "PWServer/PWServer-Info.plist"; sourceTree = "<group>"; };
+		C3DC133816E7FD2C00E88C80 /* PWMsgBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMsgBase.h; path = Shared/Model/PWMsgBase.h; sourceTree = "<group>"; };
+		C3E56BAC1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteControlClientManagerDelegate.h; path = Shared/Manager/PWRemoteControlClientManagerDelegate.h; sourceTree = "<group>"; };
+		C3E56BAF171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteControlServerManagerDelegate.h; path = Shared/Manager/PWRemoteControlServerManagerDelegate.h; sourceTree = "<group>"; };
+		C3F6467616BDE663001F90C5 /* PWBrowseStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBrowseStrategy.h; path = Shared/Network/Server/PWBrowseStrategy.h; sourceTree = "<group>"; };
+		C3F6467816BDE743001F90C5 /* PWBrowseTCPStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBrowseTCPStrategy.h; path = Shared/Network/Server/PWBrowseTCPStrategy.h; sourceTree = "<group>"; };
+		C3F6467916BDE743001F90C5 /* PWBrowseTCPStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBrowseTCPStrategy.m; path = Shared/Network/Server/PWBrowseTCPStrategy.m; sourceTree = "<group>"; };
+		C3F6467C16BDE824001F90C5 /* PWBrowseUDPStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBrowseUDPStrategy.h; path = Shared/Network/Server/PWBrowseUDPStrategy.h; sourceTree = "<group>"; };
+		C3F6467D16BDE824001F90C5 /* PWBrowseUDPStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBrowseUDPStrategy.m; path = Shared/Network/Server/PWBrowseUDPStrategy.m; sourceTree = "<group>"; };
+		C3FBBED716F05DEF000F87A7 /* PWConnectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWConnectionTest.h; sourceTree = "<group>"; };
+		C3FBBED816F05DEF000F87A7 /* PWConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWConnectionTest.m; sourceTree = "<group>"; };
+		C3FBBEDA16F05EFD000F87A7 /* PWRemoteControlClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWRemoteControlClientManager.h; path = Shared/Manager/PWRemoteControlClientManager.h; sourceTree = "<group>"; };
+		C3FBBEDB16F05EFD000F87A7 /* PWRemoteControlClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWRemoteControlClientManager.m; path = Shared/Manager/PWRemoteControlClientManager.m; sourceTree = "<group>"; };
+		C3FBBEE116F07662000F87A7 /* PWManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWManagerTest.h; sourceTree = "<group>"; };
+		C3FBBEE216F07662000F87A7 /* PWManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWManagerTest.m; sourceTree = "<group>"; };
+		C3FBBEE416F078E0000F87A7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		C3FEF540168D109700D79A64 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utilities.h"; path = "Shared/Category/NSString+Utilities.h"; sourceTree = "<group>"; };
+		C3FEF541168D109700D79A64 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utilities.m"; path = "Shared/Category/NSString+Utilities.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C31BFA87167BB379002FBEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C399606D1708CC7800E0610B /* CFNetwork.framework in Frameworks */,
+				C31B213616FD063700B148A2 /* SystemConfiguration.framework in Frameworks */,
+				C33CD998168A8F350023156F /* libz.1.2.5.dylib in Frameworks */,
+				C31BFB34167BC802002FBEC6 /* CoreServices.framework in Frameworks */,
+				C3698EC7168A63750033943D /* CoreFoundation.framework in Frameworks */,
+				C31BFB35167BC80B002FBEC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3242D2116E3D19500532800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BA9D6C1707A3660000DA02 /* CoreServices.framework in Frameworks */,
+				C3BA9D6A1707A2F40000DA02 /* Foundation.framework in Frameworks */,
+				C31B212A16FCE80300B148A2 /* SystemConfiguration.framework in Frameworks */,
+				C3FBBEE516F078E0000F87A7 /* libz.1.2.5.dylib in Frameworks */,
+				C3242D2716E3D19500532800 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3267B7D167BAF4B0040B12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C399606B1708CC7100E0610B /* CFNetwork.framework in Frameworks */,
+				C31B213516FD061600B148A2 /* SystemConfiguration.framework in Frameworks */,
+				C3A48FCC16B8611800157398 /* libz.1.2.5.dylib in Frameworks */,
+				C3A48FCE16B8612100157398 /* CoreFoundation.framework in Frameworks */,
+				C3A48FCA16B8610C00157398 /* MobileCoreServices.framework in Frameworks */,
+				C3267B83167BAF4B0040B12B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C316A2C8167B923D0077D397 = {
+			isa = PBXGroup;
+			children = (
+				C31BFB0B167BC610002FBEC6 /* Shared */,
+				C3CDB3D016DD4C3B000C70BC /* PWServer */,
+				C3242D2E16E3D19500532800 /* PWServerTest */,
+				C3267B81167BAF4B0040B12B /* Frameworks */,
+				C31A298F167DF36400AEC23F /* PWServer.framework */,
+				C31A2990167DF36400AEC23F /* PWServer.framework */,
+				C3242D2516E3D19500532800 /* PWServerTest.octest */,
+			);
+			sourceTree = "<group>";
+		};
+		C31A299E167E4BE600AEC23F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEF539168BDF3100D79A64 /* Model */,
+				C3C5E7EE16950AAD00F9AC87 /* Communication */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		C31BFB0B167BC610002FBEC6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C3242CFF16E3CE1200532800 /* MSJSONMapper */,
+				C3242D3F16E3E97E00532800 /* Model */,
+				C33CD9BD168AFD240023156F /* Manager */,
+				C33CD9B6168AF9D70023156F /* Delegate */,
+				C33CD990168A8EE50023156F /* Category */,
+				C31A299E167E4BE600AEC23F /* Network */,
+				C3698EBE168A517C0033943D /* MacroShared.h */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		C31CD02E16B5F02700B234A0 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				C3B25D8D16B6FE0D00C02CB8 /* Model */,
+				C3964FB516BF0FBB0029825E /* AsyncUdpSocket.h */,
+				C3964FB616BF0FBB0029825E /* AsyncUdpSocket.m */,
+				C3C5E7F416950ADB00F9AC87 /* PWUDPServer.h */,
+				C3C5E7F516950ADB00F9AC87 /* PWUDPServer.m */,
+			);
+			name = UDP;
+			sourceTree = "<group>";
+		};
+		C31CD03D16B5FD4700B234A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD03816B5FD4100B234A0 /* PWTCPBuffer.h */,
+				C31CD03916B5FD4100B234A0 /* PWTCPBuffer.m */,
+				C3B25D9416B6FFE500C02CB8 /* PWTCPPeer.h */,
+				C3B25D9516B6FFE500C02CB8 /* PWTCPPeer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C31CD03E16B5FE1F00B234A0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD04116B5FE5200B234A0 /* Buffer */,
+				C31CD04216B5FE7700B234A0 /* Peer */,
+				C31CD03F16B5FE2C00B234A0 /* Server */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		C31CD03F16B5FE2C00B234A0 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				C3C2E6D716A0756900CBB045 /* PWBaseServer.h */,
+				C3C2E6D816A0756900CBB045 /* PWBaseServer.m */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		C31CD04016B5FE3600B234A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD03616B5FA0900B234A0 /* PWBaseBufferDelegate.h */,
+				C356FED016A9FC7200D3CEB9 /* PWBaseServerDelegate.h */,
+				C31CD04816B5FEC100B234A0 /* PWBasePeerDelegate.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		C31CD04116B5FE5200B234A0 /* Buffer */ = {
+			isa = PBXGroup;
+			children = (
+				C306174C1735AD7900B36352 /* PWBaseBufferHeader.h */,
+				C31CD03116B5F94A00B234A0 /* PWBaseBuffer.h */,
+				C31CD03216B5F94A00B234A0 /* PWBaseBuffer.m */,
+			);
+			name = Buffer;
+			sourceTree = "<group>";
+		};
+		C31CD04216B5FE7700B234A0 /* Peer */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD04316B5FE8F00B234A0 /* PWBasePeer.h */,
+				C31CD04416B5FE8F00B234A0 /* PWBasePeer.m */,
+			);
+			name = Peer;
+			sourceTree = "<group>";
+		};
+		C3242CFF16E3CE1200532800 /* MSJSONMapper */ = {
+			isa = PBXGroup;
+			children = (
+				C3242D0016E3CE1200532800 /* MSJSONMapEntity.h */,
+				C3242D0116E3CE1200532800 /* MSJSONMapEntity.m */,
+				C3242D0216E3CE1200532800 /* MSJSONMapper.h */,
+				C3242D0316E3CE1200532800 /* MSJSONMapper.m */,
+				C3242D0416E3CE1200532800 /* MSJSONMapperManager.h */,
+				C3242D0516E3CE1200532800 /* MSJSONMapperManager.m */,
+				C3242D0616E3CE1200532800 /* MSJSONMapperProtocol.h */,
+				C3242D0716E3CE1200532800 /* MSJSONUnmapper.h */,
+				C3242D0816E3CE1200532800 /* MSJSONUnmapper.m */,
+			);
+			name = MSJSONMapper;
+			path = Shared/MSJSONMapper;
+			sourceTree = "<group>";
+		};
+		C3242D2A16E3D19500532800 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3242D2B16E3D19500532800 /* AppKit.framework */,
+				C3242D2C16E3D19500532800 /* CoreData.framework */,
+				C3242D2D16E3D19500532800 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C3242D2E16E3D19500532800 /* PWServerTest */ = {
+			isa = PBXGroup;
+			children = (
+				C3242D2F16E3D19500532800 /* Supporting Files */,
+				C3FBBEE116F07662000F87A7 /* PWManagerTest.h */,
+				C3FBBEE216F07662000F87A7 /* PWManagerTest.m */,
+				C3242D3B16E3D1BD00532800 /* PWDelegateControllerTest.h */,
+				C3242D3C16E3D1BD00532800 /* PWDelegateControllerTest.m */,
+				C3FBBED716F05DEF000F87A7 /* PWConnectionTest.h */,
+				C3FBBED816F05DEF000F87A7 /* PWConnectionTest.m */,
+				C3BA9D6617079D670000DA02 /* PWTCPTest.h */,
+				C3BA9D6717079D670000DA02 /* PWTCPTest.m */,
+			);
+			path = PWServerTest;
+			sourceTree = "<group>";
+		};
+		C3242D2F16E3D19500532800 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3242D3016E3D19500532800 /* PWServerTest-Info.plist */,
+				C3242D3116E3D19500532800 /* InfoPlist.strings */,
+				C3242D3716E3D19500532800 /* PWServerTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3242D3F16E3E97E00532800 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3DC133816E7FD2C00E88C80 /* PWMsgBase.h */,
+				C3242D4016E3E99E00532800 /* PWMsgAccessRequest.h */,
+				C3242D4116E3E99E00532800 /* PWMsgAccessRequest.m */,
+				C3242D4A16E3EC2B00532800 /* PWMsgAccessResponse.h */,
+				C3242D4B16E3EC2B00532800 /* PWMsgAccessResponse.m */,
+				C30685FF16EA5F8F0003B22B /* PWMsgControlRequest.h */,
+				C306860016EA5F8F0003B22B /* PWMsgControlRequest.m */,
+				C306860616EA5FB00003B22B /* PWMsgControlResponse.h */,
+				C306860716EA5FB00003B22B /* PWMsgControlResponse.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C3267B81167BAF4B0040B12B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38A28F8170F4C0900F92479 /* Test */,
+				C3A48FD116B8629900157398 /* iOS */,
+				C3A48FD016B8629400157398 /* Mac */,
+				C3242D2A16E3D19500532800 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C33CD990168A8EE50023156F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C3242D1B16E3CFB400532800 /* NSData+Base64.h */,
+				C3242D1C16E3CFB500532800 /* NSData+Base64.m */,
+				C33CD992168A8EF70023156F /* NSData+Compression.h */,
+				C33CD991168A8EF70023156F /* NSData+Compression.m */,
+				C3FEF540168D109700D79A64 /* NSString+Utilities.h */,
+				C3FEF541168D109700D79A64 /* NSString+Utilities.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		C33CD9B6168AF9D70023156F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C38A290417106AAD00F92479 /* PWPointer.h */,
+				C38A290517106AAD00F92479 /* PWPointer.m */,
+				C33CD9B8168AFA000023156F /* PWDelegateController.h */,
+				C33CD9B9168AFA000023156F /* PWDelegateController.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		C33CD9BD168AFD240023156F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EED2D53316FBA19000CACAF2 /* Base */,
+				C30685F116EA52400003B22B /* PWCommunicationManager.h */,
+				C30685F216EA52400003B22B /* PWCommunicationManager.m */,
+				C3E56BAF171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h */,
+				C30685F816EA54440003B22B /* PWRemoteControlServerManager.h */,
+				C30685F916EA54440003B22B /* PWRemoteControlServerManager.m */,
+				C3E56BAC1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h */,
+				C3FBBEDA16F05EFD000F87A7 /* PWRemoteControlClientManager.h */,
+				C3FBBEDB16F05EFD000F87A7 /* PWRemoteControlClientManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		C37AA41E16AC94500037257A /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				C3C5E7E816950AA900F9AC87 /* PWAbstractServer.h */,
+				C3C5E7E916950AA900F9AC87 /* PWAbstractServer.m */,
+				C31CD02E16B5F02700B234A0 /* UDP */,
+				C3C2E6DC16A0789E00CBB045 /* TCP */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		C38A28F8170F4C0900F92479 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C3BA9D6B1707A3650000DA02 /* CoreServices.framework */,
+				C3242D2616E3D19500532800 /* SenTestingKit.framework */,
+				C3964F9F16BF0EB00029825E /* Foundation.framework */,
+				C3FBBEE416F078E0000F87A7 /* libz.1.2.5.dylib */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		C3A48FD016B8629400157398 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				C399606C1708CC7800E0610B /* CFNetwork.framework */,
+				C31B212916FCE80300B148A2 /* SystemConfiguration.framework */,
+				C31BFB31167BC7BF002FBEC6 /* Foundation.framework */,
+				C33CD997168A8F350023156F /* libz.1.2.5.dylib */,
+				C31BFB33167BC802002FBEC6 /* CoreServices.framework */,
+				C31BFB2D167BC74B002FBEC6 /* CoreFoundation.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		C3A48FD116B8629900157398 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C399606A1708CC7100E0610B /* CFNetwork.framework */,
+				C31B213416FD061500B148A2 /* SystemConfiguration.framework */,
+				C3267B82167BAF4B0040B12B /* Foundation.framework */,
+				C3A48FCB16B8611800157398 /* libz.1.2.5.dylib */,
+				C3A48FC916B8610C00157398 /* MobileCoreServices.framework */,
+				C3A48FCD16B8612100157398 /* CoreFoundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C3B25D8D16B6FE0D00C02CB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B25D8F16B6FE3100C02CB8 /* PWUDPBuffer.h */,
+				C3B25D9016B6FE3100C02CB8 /* PWUDPBuffer.m */,
+				C3B25DB616B7191F00C02CB8 /* PWUDPPeer.h */,
+				C3B25DB716B7191F00C02CB8 /* PWUDPPeer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C3C2E6DC16A0789E00CBB045 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD03D16B5FD4700B234A0 /* Model */,
+				C3BA9D5F170775190000DA02 /* AsyncSocket.h */,
+				C3BA9D60170775190000DA02 /* AsyncSocket.m */,
+				C3C5E7EF16950ACB00F9AC87 /* PWTCPServer.h */,
+				C3C5E7F016950ACB00F9AC87 /* PWTCPServer.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+		C3C2E6DD16A078B400CBB045 /* Browsing */ = {
+			isa = PBXGroup;
+			children = (
+				C3F6467516BDE621001F90C5 /* Strategy */,
+				C3C5E7F916950AF500F9AC87 /* PWBrowseServer.h */,
+				C3C5E7FA16950AF500F9AC87 /* PWBrowseServer.m */,
+			);
+			name = Browsing;
+			sourceTree = "<group>";
+		};
+		C3C5E7EE16950AAD00F9AC87 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				C31CD03E16B5FE1F00B234A0 /* Base */,
+				C31CD04016B5FE3600B234A0 /* Protocol */,
+				C37AA41E16AC94500037257A /* Server */,
+				C3C2E6DD16A078B400CBB045 /* Browsing */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		C3CDB3D016DD4C3B000C70BC /* PWServer */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDB3D816DD4FB0000C70BC /* PWServer-Info.plist */,
+				C3CDB3D116DD4C73000C70BC /* PWServer.h */,
+				C3CDB3D216DD4D55000C70BC /* PWServer-Prefix.pch */,
+				C3CDB3D316DD4EEE000C70BC /* Macro.h */,
+			);
+			name = PWServer;
+			sourceTree = "<group>";
+		};
+		C3F6467516BDE621001F90C5 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				C3F6467616BDE663001F90C5 /* PWBrowseStrategy.h */,
+				C3F6467816BDE743001F90C5 /* PWBrowseTCPStrategy.h */,
+				C3F6467916BDE743001F90C5 /* PWBrowseTCPStrategy.m */,
+				C3F6467C16BDE824001F90C5 /* PWBrowseUDPStrategy.h */,
+				C3F6467D16BDE824001F90C5 /* PWBrowseUDPStrategy.m */,
+			);
+			name = Strategy;
+			sourceTree = "<group>";
+		};
+		C3FEF539168BDF3100D79A64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31A29A5167E4C1D00AEC23F /* PWIPAddress.h */,
+				C31A29A6167E4C1D00AEC23F /* PWIPAddress.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EED2D53316FBA19000CACAF2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C33CD9BE168AFD480023156F /* PWBaseManager.h */,
+				C33CD9BF168AFD480023156F /* PWBaseManager.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C31BFA88167BB379002FBEC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33CD9EA168B7B0D0023156F /* MacroShared.h in Headers */,
+				C31A29AD167E4C1D00AEC23F /* PWIPAddress.h in Headers */,
+				C33CD9BA168AFA000023156F /* PWDelegateController.h in Headers */,
+				C33CD9C0168AFD480023156F /* PWBaseManager.h in Headers */,
+				C3FEF542168D109700D79A64 /* NSString+Utilities.h in Headers */,
+				C3C5E7EA16950AA900F9AC87 /* PWAbstractServer.h in Headers */,
+				C3C5E7F116950ACB00F9AC87 /* PWTCPServer.h in Headers */,
+				C3C5E7F616950ADB00F9AC87 /* PWUDPServer.h in Headers */,
+				C3C5E7FB16950AF500F9AC87 /* PWBrowseServer.h in Headers */,
+				C3C2E6D916A0756900CBB045 /* PWBaseServer.h in Headers */,
+				C356FED116A9FC7200D3CEB9 /* PWBaseServerDelegate.h in Headers */,
+				C31CD03716B5FA0A00B234A0 /* PWBaseBufferDelegate.h in Headers */,
+				C31CD03316B5F94A00B234A0 /* PWBaseBuffer.h in Headers */,
+				C31CD03A16B5FD4100B234A0 /* PWTCPBuffer.h in Headers */,
+				C31CD04516B5FE8F00B234A0 /* PWBasePeer.h in Headers */,
+				C31CD04916B5FEC100B234A0 /* PWBasePeerDelegate.h in Headers */,
+				C3B25D9116B6FE3100C02CB8 /* PWUDPBuffer.h in Headers */,
+				C3B25D9616B6FFE500C02CB8 /* PWTCPPeer.h in Headers */,
+				C3B25DB816B7191F00C02CB8 /* PWUDPPeer.h in Headers */,
+				C3F6467716BDE663001F90C5 /* PWBrowseStrategy.h in Headers */,
+				C3F6467A16BDE743001F90C5 /* PWBrowseTCPStrategy.h in Headers */,
+				C3F6467E16BDE824001F90C5 /* PWBrowseUDPStrategy.h in Headers */,
+				C3964FB716BF0FBB0029825E /* AsyncUdpSocket.h in Headers */,
+				C3CDB44816DD5C18000C70BC /* PWServer.h in Headers */,
+				C3242D0D16E3CE6000532800 /* MSJSONMapEntity.h in Headers */,
+				C3242D0E16E3CE6000532800 /* MSJSONMapper.h in Headers */,
+				C3242D0F16E3CE6000532800 /* MSJSONMapperManager.h in Headers */,
+				C3242D1016E3CE6000532800 /* MSJSONMapperProtocol.h in Headers */,
+				C3242D1116E3CE6000532800 /* MSJSONUnmapper.h in Headers */,
+				C3242D4216E3E99E00532800 /* PWMsgAccessRequest.h in Headers */,
+				C30685F316EA52400003B22B /* PWCommunicationManager.h in Headers */,
+				C30685FA16EA54440003B22B /* PWRemoteControlServerManager.h in Headers */,
+				C306860116EA5F8F0003B22B /* PWMsgControlRequest.h in Headers */,
+				C306860816EA5FB00003B22B /* PWMsgControlResponse.h in Headers */,
+				C3FBBEDC16F05EFD000F87A7 /* PWRemoteControlClientManager.h in Headers */,
+				C3242D4C16E3EC2B00532800 /* PWMsgAccessResponse.h in Headers */,
+				C3242D1D16E3CFB500532800 /* NSData+Base64.h in Headers */,
+				C3DC133916E7FD2C00E88C80 /* PWMsgBase.h in Headers */,
+				C3BA9D611707751A0000DA02 /* AsyncSocket.h in Headers */,
+				C38A290617106AAD00F92479 /* PWPointer.h in Headers */,
+				C3E56BAD1717308F006C87C2 /* PWRemoteControlClientManagerDelegate.h in Headers */,
+				C3E56BB0171730FC006C87C2 /* PWRemoteControlServerManagerDelegate.h in Headers */,
+				C306174D1735AD7900B36352 /* PWBaseBufferHeader.h in Headers */,
+				C33CD995168A8EF70023156F /* NSData+Compression.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C31BFA8A167BB379002FBEC6 /* PWServerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31BFA9C167BB379002FBEC6 /* Build configuration list for PBXNativeTarget "PWServerMac" */;
+			buildPhases = (
+				C31BFA86167BB379002FBEC6 /* Sources */,
+				C31BFA87167BB379002FBEC6 /* Frameworks */,
+				C31BFA88167BB379002FBEC6 /* Headers */,
+				C31BFA89167BB379002FBEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWServerMac;
+			productName = PWServerMacFramework;
+			productReference = C31A298F167DF36400AEC23F /* PWServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3242D2416E3D19500532800 /* PWServerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3242D3816E3D19500532800 /* Build configuration list for PBXNativeTarget "PWServerTest" */;
+			buildPhases = (
+				C3242D2016E3D19500532800 /* Sources */,
+				C3242D2116E3D19500532800 /* Frameworks */,
+				C3242D2216E3D19500532800 /* Resources */,
+				C3242D2316E3D19500532800 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWServerTest;
+			productName = PWServerTest;
+			productReference = C3242D2516E3D19500532800 /* PWServerTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C3267B7F167BAF4B0040B12B /* PWServeriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3267B8B167BAF4B0040B12B /* Build configuration list for PBXNativeTarget "PWServeriOS" */;
+			buildPhases = (
+				C3267B7C167BAF4B0040B12B /* Sources */,
+				C3267B7D167BAF4B0040B12B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWServeriOS;
+			productName = PWServeriOSFramework;
+			productReference = C31A2990167DF36400AEC23F /* PWServer.framework */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C316A2CA167B923D0077D397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = C316A2CD167B923D0077D397 /* Build configuration list for PBXProject "PassagewayServerFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C316A2C8167B923D0077D397;
+			productRefGroup = C316A2C8167B923D0077D397;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C31BFA8A167BB379002FBEC6 /* PWServerMac */,
+				C3267B7F167BAF4B0040B12B /* PWServeriOS */,
+				C3FEF548168DF8F700D79A64 /* PWServer-Remove */,
+				C3CDB3DD16DD553D000C70BC /* PWServer-Generate Mac */,
+				C3CDB40916DD554E000C70BC /* PWServer-Generate iOS */,
+				C3267B8E167BAF5D0040B12B /* PWServer-Generate */,
+				C356FEB616A9FB2600D3CEB9 /* PWServer-Test */,
+				C37A112516E156960019540C /* PWServer-Generate Doc */,
+				C3242D2416E3D19500532800 /* PWServerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C31BFA89167BB379002FBEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3242D2216E3D19500532800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242D3316E3D19500532800 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3242D2316E3D19500532800 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C356FEB916A9FB2600D3CEB9 /* Build Static Libs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Static Libs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${FRAMEWORK_NAME}iOS -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${FRAMEWORK_NAME}iOS -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos";
+		};
+		C356FECA16A9FB2600D3CEB9 /* Build Mac Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Mac Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk macosx -target ${PRODUCT_NAME}Mac -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-mac";
+			showEnvVarsInLog = 0;
+		};
+		C37A114F16E156DC0019540C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PUBLIC_HEADERS_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${FRAMEWORK_NAME}.framework/Versions/A/Headers\"\nOUTPUT_DIR=\"${SRCROOT}/../Documentation\"\nrm -rf \"${OUTPUT_DIR}\"\n#headerdoc2html -dqo \"${OUTPUT_DIR}\" \"${PUBLIC_HEADERS_DIR}\"\n#gatherheaderdoc \"${OUTPUT_DIR}\"\n\n/usr/local/bin/appledoc \\\n--project-name \"PWServer framework\" \\\n--project-company MSCodeFactory \\\n--company-id com.mscodefactory \\\n--output \"${OUTPUT_DIR}\" \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--search-undocumented-doc \\\n--no-create-docset \\\n--merge-categories \\\n\"${PUBLIC_HEADERS_DIR}\"\n\necho \"Generated DOC\"";
+			showEnvVarsInLog = 0;
+		};
+		C3CDB40416DD553D000C70BC /* Build Mac Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Mac Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk macosx -target ${FRAMEWORK_NAME}Mac -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-mac";
+			showEnvVarsInLog = 0;
+		};
+		C3CDB40516DD553D000C70BC /* Copy Generated Mac Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Generated Mac Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_MAC=\"${BUILD_DIR}/${CONFIGURATION}-mac/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_MAC_COPY_DIR=\"${SRCROOT}/../PassagewayServerMac/PassagewayServerMac/Frameworks/${FRAMEWORK_NAME}.framework\"\n\necho \"REMOVE OLD FRAMEWORKS\"\nif [ -d \"${FRAMEWORK_MAC_COPY_DIR}\" ]; then\n    rm -r ${FRAMEWORK_MAC_COPY_DIR}\nfi\n\necho \"COPY NEW FRAMEWORKS\"\ncp -R ${FRAMEWORK_MAC} ${FRAMEWORK_MAC_COPY_DIR}";
+			showEnvVarsInLog = 0;
+		};
+		C3CDB40C16DD554E000C70BC /* Build Static Libs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Static Libs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${FRAMEWORK_NAME}iOS -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${FRAMEWORK_NAME}iOS -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos";
+			showEnvVarsInLog = 0;
+		};
+		C3CDB40D16DD554E000C70BC /* Build Universal Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Universal Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\n\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\" &&\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\"  -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${FRAMEWORK_NAME}\" \"${FRAMEWORK}/${FRAMEWORK_NAME}\"";
+			showEnvVarsInLog = 0;
+		};
+		C3CDB42F16DD554E000C70BC /* Copy Generated iOS Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Generated iOS Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_IOS=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${FRAMEWORK_NAME}.framework\"\nFRAMEWORK_IOS_COPY_DIR=\"${SRCROOT}/../PassagewayClientiOS/PassagewayClientiOS/Frameworks/${FRAMEWORK_NAME}.framework\"\n\necho \"REMOVE OLD FRAMEWORKS\"\nif [ -d \"${FRAMEWORK_IOS_COPY_DIR}\" ]; then\n    rm -r ${FRAMEWORK_IOS_COPY_DIR}\nfi\n\necho \"COPY NEW FRAMEWORKS\"\ncp -R ${FRAMEWORK_IOS} ${FRAMEWORK_IOS_COPY_DIR}";
+			showEnvVarsInLog = 0;
+		};
+		C3FEF54C168DF8FC00D79A64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\n\nif [ -d \"${UNIVERSAL_LIBRARY_DIR}\" ]; then\nrm -r ${UNIVERSAL_LIBRARY_DIR}\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C31BFA86167BB379002FBEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31A29AE167E4C1D00AEC23F /* PWIPAddress.m in Sources */,
+				C33CD993168A8EF70023156F /* NSData+Compression.m in Sources */,
+				C33CD9BB168AFA000023156F /* PWDelegateController.m in Sources */,
+				C33CD9C1168AFD480023156F /* PWBaseManager.m in Sources */,
+				C3FEF543168D109700D79A64 /* NSString+Utilities.m in Sources */,
+				C3C5E7EB16950AA900F9AC87 /* PWAbstractServer.m in Sources */,
+				C3C5E7F216950ACB00F9AC87 /* PWTCPServer.m in Sources */,
+				C3C5E7F716950ADB00F9AC87 /* PWUDPServer.m in Sources */,
+				C3C5E7FC16950AF500F9AC87 /* PWBrowseServer.m in Sources */,
+				C3C2E6DA16A0756900CBB045 /* PWBaseServer.m in Sources */,
+				C31CD03416B5F94A00B234A0 /* PWBaseBuffer.m in Sources */,
+				C31CD03B16B5FD4100B234A0 /* PWTCPBuffer.m in Sources */,
+				C31CD04616B5FE8F00B234A0 /* PWBasePeer.m in Sources */,
+				C3B25D9216B6FE3100C02CB8 /* PWUDPBuffer.m in Sources */,
+				C3B25D9716B6FFE500C02CB8 /* PWTCPPeer.m in Sources */,
+				C3B25DB916B7191F00C02CB8 /* PWUDPPeer.m in Sources */,
+				C3F6467B16BDE743001F90C5 /* PWBrowseTCPStrategy.m in Sources */,
+				C3F6467F16BDE824001F90C5 /* PWBrowseUDPStrategy.m in Sources */,
+				C3964FB816BF0FBB0029825E /* AsyncUdpSocket.m in Sources */,
+				C3242D0916E3CE4700532800 /* MSJSONMapEntity.m in Sources */,
+				C3242D0A16E3CE4700532800 /* MSJSONMapper.m in Sources */,
+				C3242D0B16E3CE4700532800 /* MSJSONMapperManager.m in Sources */,
+				C3242D0C16E3CE4700532800 /* MSJSONUnmapper.m in Sources */,
+				C3242D1E16E3CFB500532800 /* NSData+Base64.m in Sources */,
+				C3242D4316E3E99E00532800 /* PWMsgAccessRequest.m in Sources */,
+				C3242D4D16E3EC2B00532800 /* PWMsgAccessResponse.m in Sources */,
+				C30685F516EA52400003B22B /* PWCommunicationManager.m in Sources */,
+				C30685FC16EA54440003B22B /* PWRemoteControlServerManager.m in Sources */,
+				C306860316EA5F8F0003B22B /* PWMsgControlRequest.m in Sources */,
+				C306860A16EA5FB00003B22B /* PWMsgControlResponse.m in Sources */,
+				C3FBBEDE16F05EFD000F87A7 /* PWRemoteControlClientManager.m in Sources */,
+				C3BA9D631707751A0000DA02 /* AsyncSocket.m in Sources */,
+				C38A290817106AAD00F92479 /* PWPointer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3242D2016E3D19500532800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3242D3D16E3D1BD00532800 /* PWDelegateControllerTest.m in Sources */,
+				C3FBBEB616F05D09000F87A7 /* MSJSONMapEntity.m in Sources */,
+				C3FBBEB716F05D09000F87A7 /* MSJSONMapper.m in Sources */,
+				C3FBBEB816F05D09000F87A7 /* MSJSONMapperManager.m in Sources */,
+				C3FBBEB916F05D09000F87A7 /* MSJSONUnmapper.m in Sources */,
+				C3FBBEBA16F05D09000F87A7 /* PWMsgAccessRequest.m in Sources */,
+				C3FBBEBB16F05D09000F87A7 /* PWMsgAccessResponse.m in Sources */,
+				C3FBBEBC16F05D09000F87A7 /* PWMsgControlRequest.m in Sources */,
+				C3FBBEBD16F05D09000F87A7 /* PWMsgControlResponse.m in Sources */,
+				C3FBBEBE16F05D09000F87A7 /* PWBaseManager.m in Sources */,
+				C3FBBEBF16F05D09000F87A7 /* PWCommunicationManager.m in Sources */,
+				C3FBBEC016F05D09000F87A7 /* PWRemoteControlServerManager.m in Sources */,
+				C3242D3E16E3D39200532800 /* PWDelegateController.m in Sources */,
+				C3FBBEC116F05D09000F87A7 /* NSData+Base64.m in Sources */,
+				C3FBBEC216F05D09000F87A7 /* NSData+Compression.m in Sources */,
+				C3FBBEC316F05D09000F87A7 /* NSString+Utilities.m in Sources */,
+				C3FBBEC416F05D09000F87A7 /* PWIPAddress.m in Sources */,
+				C3FBBEC516F05D09000F87A7 /* PWBasePeer.m in Sources */,
+				C3FBBEC616F05D09000F87A7 /* PWBaseServer.m in Sources */,
+				C3FBBEC716F05D09000F87A7 /* PWBaseBuffer.m in Sources */,
+				C3FBBEC816F05D09000F87A7 /* PWAbstractServer.m in Sources */,
+				C3FBBEC916F05D09000F87A7 /* PWUDPBuffer.m in Sources */,
+				C3FBBECA16F05D09000F87A7 /* PWUDPPeer.m in Sources */,
+				C3FBBECB16F05D09000F87A7 /* AsyncUdpSocket.m in Sources */,
+				C3FBBECC16F05D09000F87A7 /* PWUDPServer.m in Sources */,
+				C3FBBECD16F05D09000F87A7 /* PWTCPBuffer.m in Sources */,
+				C3FBBECE16F05D09000F87A7 /* PWTCPPeer.m in Sources */,
+				C3FBBECF16F05D09000F87A7 /* PWTCPServer.m in Sources */,
+				C3FBBED016F05D09000F87A7 /* PWBrowseTCPStrategy.m in Sources */,
+				C3FBBED116F05D09000F87A7 /* PWBrowseUDPStrategy.m in Sources */,
+				C3FBBED216F05D09000F87A7 /* PWBrowseServer.m in Sources */,
+				C3FBBED916F05DEF000F87A7 /* PWConnectionTest.m in Sources */,
+				C3FBBEE316F07662000F87A7 /* PWManagerTest.m in Sources */,
+				C3FBBEE616F078FB000F87A7 /* PWRemoteControlClientManager.m in Sources */,
+				C3BA9D6817079D670000DA02 /* PWTCPTest.m in Sources */,
+				C3BA9D691707A28C0000DA02 /* AsyncSocket.m in Sources */,
+				C38A290B17106EDC00F92479 /* PWPointer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3267B7C167BAF4B0040B12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31A29AF167E4C1D00AEC23F /* PWIPAddress.m in Sources */,
+				C33CD994168A8EF70023156F /* NSData+Compression.m in Sources */,
+				C33CD9BC168AFA000023156F /* PWDelegateController.m in Sources */,
+				C33CD9C2168AFD480023156F /* PWBaseManager.m in Sources */,
+				C3FEF544168D109700D79A64 /* NSString+Utilities.m in Sources */,
+				C3C5E7EC16950AA900F9AC87 /* PWAbstractServer.m in Sources */,
+				C3C5E7F316950ACB00F9AC87 /* PWTCPServer.m in Sources */,
+				C3C5E7F816950ADB00F9AC87 /* PWUDPServer.m in Sources */,
+				C3C5E7FD16950AF500F9AC87 /* PWBrowseServer.m in Sources */,
+				C3C2E6DB16A0756900CBB045 /* PWBaseServer.m in Sources */,
+				C31CD03516B5F94A00B234A0 /* PWBaseBuffer.m in Sources */,
+				C31CD03C16B5FD4100B234A0 /* PWTCPBuffer.m in Sources */,
+				C31CD04716B5FE8F00B234A0 /* PWBasePeer.m in Sources */,
+				C3B25D9316B6FE3100C02CB8 /* PWUDPBuffer.m in Sources */,
+				C3B25D9816B6FFE500C02CB8 /* PWTCPPeer.m in Sources */,
+				C3B25DBA16B7191F00C02CB8 /* PWUDPPeer.m in Sources */,
+				C3F6468416BDED8B001F90C5 /* PWBrowseTCPStrategy.m in Sources */,
+				C3F6468016BDE824001F90C5 /* PWBrowseUDPStrategy.m in Sources */,
+				C3964FB916BF0FBB0029825E /* AsyncUdpSocket.m in Sources */,
+				C3242D1716E3CE7E00532800 /* MSJSONMapEntity.m in Sources */,
+				C3242D1816E3CE7E00532800 /* MSJSONMapper.m in Sources */,
+				C3242D1916E3CE7E00532800 /* MSJSONMapperManager.m in Sources */,
+				C3242D1A16E3CE7E00532800 /* MSJSONUnmapper.m in Sources */,
+				C3242D1F16E3CFB500532800 /* NSData+Base64.m in Sources */,
+				C3242D4416E3E99E00532800 /* PWMsgAccessRequest.m in Sources */,
+				C3242D4E16E3EC2B00532800 /* PWMsgAccessResponse.m in Sources */,
+				C30685F616EA52400003B22B /* PWCommunicationManager.m in Sources */,
+				C30685FD16EA54440003B22B /* PWRemoteControlServerManager.m in Sources */,
+				C306860416EA5F8F0003B22B /* PWMsgControlRequest.m in Sources */,
+				C306860B16EA5FB00003B22B /* PWMsgControlResponse.m in Sources */,
+				C3FBBEDF16F05EFD000F87A7 /* PWRemoteControlClientManager.m in Sources */,
+				C3BA9D641707751A0000DA02 /* AsyncSocket.m in Sources */,
+				C38A290917106AAD00F92479 /* PWPointer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3CDB43616DD559B000C70BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CDB3DD16DD553D000C70BC /* PWServer-Generate Mac */;
+			targetProxy = C3CDB43516DD559B000C70BC /* PBXContainerItemProxy */;
+		};
+		C3CDB43816DD559C000C70BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3CDB40916DD554E000C70BC /* PWServer-Generate iOS */;
+			targetProxy = C3CDB43716DD559C000C70BC /* PBXContainerItemProxy */;
+		};
+		C3CDB44A16DD63D1000C70BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3FEF548168DF8F700D79A64 /* PWServer-Remove */;
+			targetProxy = C3CDB44916DD63D1000C70BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3242D3116E3D19500532800 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3242D3216E3D19500532800 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C316A2CF167B923D0077D397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C316A2D0167B923D0077D397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C31BFA9D167BB379002FBEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServer/PWServer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServer/PWServer-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C31BFA9E167BB379002FBEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServer/PWServer-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServer/PWServer-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C3242D3916E3D19500532800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServerTest/PWServerTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServerTest/PWServerTest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C3242D3A16E3D19500532800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServerTest/PWServerTest-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServerTest/PWServerTest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		C3267B8C167BAF4B0040B12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/PWServeriOSFramework.dst;
+				EXECUTABLE_EXTENSION = framework;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServer/PWServer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServer/PWServer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C3267B8D167BAF4B0040B12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/PWServeriOSFramework.dst;
+				EXECUTABLE_EXTENSION = framework;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PWServer/PWServer-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PWServer/PWServer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3267B90167BAF5D0040B12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C3267B91167BAF5D0040B12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		C356FECD16A9FB2600D3CEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C356FECE16A9FB2600D3CEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		C37A114D16E156960019540C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "PWServer-Generate iOS copy";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C37A114E16E156960019540C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "PWServer-Generate iOS copy";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		C3CDB40716DD553D000C70BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C3CDB40816DD553D000C70BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		C3CDB43316DD554E000C70BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		C3CDB43416DD554E000C70BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_NAME = PWServer;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PWServer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		C3FEF54A168DF8F700D79A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3FEF54B168DF8F700D79A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C316A2CD167B923D0077D397 /* Build configuration list for PBXProject "PassagewayServerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C316A2CF167B923D0077D397 /* Debug */,
+				C316A2D0167B923D0077D397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C31BFA9C167BB379002FBEC6 /* Build configuration list for PBXNativeTarget "PWServerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31BFA9D167BB379002FBEC6 /* Debug */,
+				C31BFA9E167BB379002FBEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3242D3816E3D19500532800 /* Build configuration list for PBXNativeTarget "PWServerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3242D3916E3D19500532800 /* Debug */,
+				C3242D3A16E3D19500532800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3267B8B167BAF4B0040B12B /* Build configuration list for PBXNativeTarget "PWServeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3267B8C167BAF4B0040B12B /* Debug */,
+				C3267B8D167BAF4B0040B12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3267B8F167BAF5D0040B12B /* Build configuration list for PBXAggregateTarget "PWServer-Generate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3267B90167BAF5D0040B12B /* Debug */,
+				C3267B91167BAF5D0040B12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C356FECC16A9FB2600D3CEB9 /* Build configuration list for PBXAggregateTarget "PWServer-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C356FECD16A9FB2600D3CEB9 /* Debug */,
+				C356FECE16A9FB2600D3CEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37A114C16E156960019540C /* Build configuration list for PBXAggregateTarget "PWServer-Generate Doc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37A114D16E156960019540C /* Debug */,
+				C37A114E16E156960019540C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDB40616DD553D000C70BC /* Build configuration list for PBXAggregateTarget "PWServer-Generate Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDB40716DD553D000C70BC /* Debug */,
+				C3CDB40816DD553D000C70BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3CDB43216DD554E000C70BC /* Build configuration list for PBXAggregateTarget "PWServer-Generate iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3CDB43316DD554E000C70BC /* Debug */,
+				C3CDB43416DD554E000C70BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FEF549168DF8F700D79A64 /* Build configuration list for PBXAggregateTarget "PWServer-Remove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FEF54A168DF8F700D79A64 /* Debug */,
+				C3FEF54B168DF8F700D79A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C316A2CA167B923D0077D397 /* Project object */;
+}

@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C326F33F172881CF00E5348C /* PWDisplayMacLib.m in Sources */ = {isa = PBXBuildFile; fileRef = C326F33E172881CF00E5348C /* PWDisplayMacLib.m */; };
+		C326F341172886A800E5348C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C326F340172886A800E5348C /* IOKit.framework */; };
+		C3494F76170CB1BA008B6A70 /* PWStatView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3494F75170CB1BA008B6A70 /* PWStatView.m */; };
+		C361F17617245FC600E74DDF /* PWCLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C361F17517245FC600E74DDF /* PWCLibTests.m */; };
+		C37D4981171A0144008FD79F /* PWImageMacLib.m in Sources */ = {isa = PBXBuildFile; fileRef = C37D497F171A0144008FD79F /* PWImageMacLib.m */; };
+		C37D4982171A0144008FD79F /* PWImageMacLib.m in Sources */ = {isa = PBXBuildFile; fileRef = C37D497F171A0144008FD79F /* PWImageMacLib.m */; };
+		C37D4985171A3029008FD79F /* PWMouseMacLib.m in Sources */ = {isa = PBXBuildFile; fileRef = C37D4984171A3029008FD79F /* PWMouseMacLib.m */; };
+		C3955B9116399EA600C468BD /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3955B8B163990E600C468BD /* libz.1.2.5.dylib */; };
+		C39B504D17204F770014A003 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39B504C17204F770014A003 /* MainWindow.xib */; };
+		C39B504F172052210014A003 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39B504E172052210014A003 /* MainMenu.xib */; };
+		C39B50531721B9A60014A003 /* PWKeyboardMacLib.m in Sources */ = {isa = PBXBuildFile; fileRef = C39B50521721B9A60014A003 /* PWKeyboardMacLib.m */; };
+		C3B3038716122AD500C6DAA0 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = C3B3038616122AD500C6DAA0 /* TODO */; };
+		C3CDB3CF16DD4B62000C70BC /* PWMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CDB3CE16DD4B62000C70BC /* PWMainWindowController.m */; };
+		C3CDB3DB16DD52C8000C70BC /* PWServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3CDB3D916DD52C6000C70BC /* PWServer.framework */; };
+		C3CDB3DC16DD52D1000C70BC /* PWServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CDB3D916DD52C6000C70BC /* PWServer.framework */; };
+		C3D42EAC16F718E000E334A7 /* ArrayCustomizationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D42EAA16F718E000E334A7 /* ArrayCustomizationTests.m */; };
+		C3D42EB016F7192B00E334A7 /* PWScreenCapturingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D42EAE16F7192B00E334A7 /* PWScreenCapturingTest.m */; };
+		C3E4B912171B0DC300A66E95 /* PWMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E4B911171B0DC300A66E95 /* PWMainController.m */; };
+		EE7FEE121603623E00EA6F06 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FEE111603623E00EA6F06 /* Cocoa.framework */; };
+		EE7FEE1C1603623E00EA6F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE7FEE1A1603623E00EA6F06 /* InfoPlist.strings */; };
+		EE7FEE1E1603623E00EA6F06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7FEE1D1603623E00EA6F06 /* main.m */; };
+		EE7FEE221603623E00EA6F06 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE7FEE201603623E00EA6F06 /* Credits.rtf */; };
+		EE7FEE251603623E00EA6F06 /* PWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7FEE241603623E00EA6F06 /* PWAppDelegate.m */; };
+		EE7FEE2B1603623F00EA6F06 /* PassagewayServerMac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE7FEE291603623F00EA6F06 /* PassagewayServerMac.xcdatamodeld */; };
+		EE7FEE331603623F00EA6F06 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FEE321603623F00EA6F06 /* SenTestingKit.framework */; };
+		EE7FEE341603623F00EA6F06 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7FEE111603623E00EA6F06 /* Cocoa.framework */; };
+		EE7FEE3C1603623F00EA6F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE7FEE3A1603623F00EA6F06 /* InfoPlist.strings */; };
+		EEB5874E16FA137C008A6B97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB5874D16FA137C008A6B97 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE7FEE351603623F00EA6F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE7FEE041603623E00EA6F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7FEE0C1603623E00EA6F06;
+			remoteInfo = PassagewayServerMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3264DFF16B04A7B0087F9C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3CDB3DB16DD52C8000C70BC /* PWServer.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C326625E16DBFCF800697198 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C326F33D172881CF00E5348C /* PWDisplayMacLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWDisplayMacLib.h; path = CLib/PWDisplayMacLib.h; sourceTree = "<group>"; };
+		C326F33E172881CF00E5348C /* PWDisplayMacLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWDisplayMacLib.m; path = CLib/PWDisplayMacLib.m; sourceTree = "<group>"; };
+		C326F340172886A800E5348C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		C3494F74170CB1BA008B6A70 /* PWStatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWStatView.h; path = View/PWStatView.h; sourceTree = "<group>"; };
+		C3494F75170CB1BA008B6A70 /* PWStatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWStatView.m; path = View/PWStatView.m; sourceTree = "<group>"; };
+		C361F17417245FC600E74DDF /* PWCLibTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWCLibTests.h; path = CLib/PWCLibTests.h; sourceTree = "<group>"; };
+		C361F17517245FC600E74DDF /* PWCLibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWCLibTests.m; path = CLib/PWCLibTests.m; sourceTree = "<group>"; };
+		C37D497F171A0144008FD79F /* PWImageMacLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWImageMacLib.m; path = CLib/PWImageMacLib.m; sourceTree = "<group>"; };
+		C37D4980171A0144008FD79F /* PWImageMacLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWImageMacLib.h; path = CLib/PWImageMacLib.h; sourceTree = "<group>"; };
+		C37D4983171A3029008FD79F /* PWMouseMacLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMouseMacLib.h; path = CLib/PWMouseMacLib.h; sourceTree = "<group>"; };
+		C37D4984171A3029008FD79F /* PWMouseMacLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMouseMacLib.m; path = CLib/PWMouseMacLib.m; sourceTree = "<group>"; };
+		C3955B8B163990E600C468BD /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		C39B504C17204F770014A003 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = UI/MainWindow.xib; sourceTree = "<group>"; };
+		C39B504E172052210014A003 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = UI/MainMenu.xib; sourceTree = "<group>"; };
+		C39B50511721B9A60014A003 /* PWKeyboardMacLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWKeyboardMacLib.h; path = CLib/PWKeyboardMacLib.h; sourceTree = "<group>"; };
+		C39B50521721B9A60014A003 /* PWKeyboardMacLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWKeyboardMacLib.m; path = CLib/PWKeyboardMacLib.m; sourceTree = "<group>"; };
+		C3B3038616122AD500C6DAA0 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		C3CDB3CD16DD4B62000C70BC /* PWMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMainWindowController.h; path = Controller/PWMainWindowController.h; sourceTree = "<group>"; };
+		C3CDB3CE16DD4B62000C70BC /* PWMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMainWindowController.m; path = Controller/PWMainWindowController.m; sourceTree = "<group>"; };
+		C3CDB3D916DD52C6000C70BC /* PWServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PWServer.framework; path = PassagewayServerMac/Frameworks/PWServer.framework; sourceTree = "<group>"; };
+		C3D42EAA16F718E000E334A7 /* ArrayCustomizationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayCustomizationTests.m; path = Array/ArrayCustomizationTests.m; sourceTree = "<group>"; };
+		C3D42EAB16F718E000E334A7 /* ArrayCustomizationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayCustomizationTests.h; path = Array/ArrayCustomizationTests.h; sourceTree = "<group>"; };
+		C3D42EAE16F7192B00E334A7 /* PWScreenCapturingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWScreenCapturingTest.m; path = ScreenCapture/PWScreenCapturingTest.m; sourceTree = "<group>"; };
+		C3D42EAF16F7192B00E334A7 /* PWScreenCapturingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWScreenCapturingTest.h; path = ScreenCapture/PWScreenCapturingTest.h; sourceTree = "<group>"; };
+		C3D42EB516F74D1E00E334A7 /* CodeSnipets */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodeSnipets; sourceTree = "<group>"; };
+		C3E4B910171B0DC300A66E95 /* PWMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWMainController.h; path = Controller/PWMainController.h; sourceTree = "<group>"; };
+		C3E4B911171B0DC300A66E95 /* PWMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWMainController.m; path = Controller/PWMainController.m; sourceTree = "<group>"; };
+		EE7FEE0D1603623E00EA6F06 /* PassagewayServerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassagewayServerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7FEE111603623E00EA6F06 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EE7FEE141603623E00EA6F06 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EE7FEE151603623E00EA6F06 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE7FEE161603623E00EA6F06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE7FEE191603623E00EA6F06 /* PassagewayServerMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassagewayServerMac-Info.plist"; sourceTree = "<group>"; };
+		EE7FEE1B1603623E00EA6F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE7FEE1D1603623E00EA6F06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE7FEE1F1603623E00EA6F06 /* PassagewayServerMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassagewayServerMac-Prefix.pch"; sourceTree = "<group>"; };
+		EE7FEE211603623E00EA6F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EE7FEE231603623E00EA6F06 /* PWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWAppDelegate.h; sourceTree = "<group>"; };
+		EE7FEE241603623E00EA6F06 /* PWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWAppDelegate.m; sourceTree = "<group>"; };
+		EE7FEE2A1603623F00EA6F06 /* PassagewayServerMac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PassagewayServerMac.xcdatamodel; sourceTree = "<group>"; };
+		EE7FEE311603623F00EA6F06 /* PassagewayServerMacTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassagewayServerMacTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7FEE321603623F00EA6F06 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE7FEE391603623F00EA6F06 /* PassagewayServerMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassagewayServerMacTests-Info.plist"; sourceTree = "<group>"; };
+		EE7FEE3B1603623F00EA6F06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE82FCDA1607359B00882AF6 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		EEB5874D16FA137C008A6B97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE7FEE0A1603623E00EA6F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C326F341172886A800E5348C /* IOKit.framework in Frameworks */,
+				EEB5874E16FA137C008A6B97 /* SystemConfiguration.framework in Frameworks */,
+				C3CDB3DC16DD52D1000C70BC /* PWServer.framework in Frameworks */,
+				EE7FEE121603623E00EA6F06 /* Cocoa.framework in Frameworks */,
+				C3955B9116399EA600C468BD /* libz.1.2.5.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7FEE2D1603623F00EA6F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FEE331603623F00EA6F06 /* SenTestingKit.framework in Frameworks */,
+				EE7FEE341603623F00EA6F06 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3494F73170CB19F008B6A70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3494F74170CB1BA008B6A70 /* PWStatView.h */,
+				C3494F75170CB1BA008B6A70 /* PWStatView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C361F17717245FCE00E74DDF /* CLib */ = {
+			isa = PBXGroup;
+			children = (
+				C361F17417245FC600E74DDF /* PWCLibTests.h */,
+				C361F17517245FC600E74DDF /* PWCLibTests.m */,
+			);
+			name = CLib;
+			sourceTree = "<group>";
+		};
+		C37D497E171A0075008FD79F /* CLib */ = {
+			isa = PBXGroup;
+			children = (
+				C37D4980171A0144008FD79F /* PWImageMacLib.h */,
+				C37D497F171A0144008FD79F /* PWImageMacLib.m */,
+				C37D4983171A3029008FD79F /* PWMouseMacLib.h */,
+				C37D4984171A3029008FD79F /* PWMouseMacLib.m */,
+				C39B50511721B9A60014A003 /* PWKeyboardMacLib.h */,
+				C39B50521721B9A60014A003 /* PWKeyboardMacLib.m */,
+				C326F33D172881CF00E5348C /* PWDisplayMacLib.h */,
+				C326F33E172881CF00E5348C /* PWDisplayMacLib.m */,
+			);
+			name = CLib;
+			sourceTree = "<group>";
+		};
+		C39B504B17204F680014A003 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C39B504E172052210014A003 /* MainMenu.xib */,
+				C39B504C17204F770014A003 /* MainWindow.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C3B30393161244B400C6DAA0 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				C3D42EAA16F718E000E334A7 /* ArrayCustomizationTests.m */,
+				C3D42EAB16F718E000E334A7 /* ArrayCustomizationTests.h */,
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
+		C3D42EAD16F7191F00E334A7 /* ScreenCapture */ = {
+			isa = PBXGroup;
+			children = (
+				C3D42EAF16F7192B00E334A7 /* PWScreenCapturingTest.h */,
+				C3D42EAE16F7192B00E334A7 /* PWScreenCapturingTest.m */,
+			);
+			name = ScreenCapture;
+			sourceTree = "<group>";
+		};
+		EE7FEE021603623E00EA6F06 = {
+			isa = PBXGroup;
+			children = (
+				C3D42EB516F74D1E00E334A7 /* CodeSnipets */,
+				C3B3038616122AD500C6DAA0 /* TODO */,
+				EE7FEE171603623E00EA6F06 /* PassagewayServerMac */,
+				EE7FEE371603623F00EA6F06 /* PassagewayServerMacTests */,
+				EE7FEE101603623E00EA6F06 /* Frameworks */,
+				EE7FEE0E1603623E00EA6F06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE7FEE0E1603623E00EA6F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FEE0D1603623E00EA6F06 /* PassagewayServerMac.app */,
+				EE7FEE311603623F00EA6F06 /* PassagewayServerMacTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7FEE101603623E00EA6F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C326F340172886A800E5348C /* IOKit.framework */,
+				EEB5874D16FA137C008A6B97 /* SystemConfiguration.framework */,
+				C3CDB3D916DD52C6000C70BC /* PWServer.framework */,
+				C3955B8B163990E600C468BD /* libz.1.2.5.dylib */,
+				EE7FEE111603623E00EA6F06 /* Cocoa.framework */,
+				EE7FEE321603623F00EA6F06 /* SenTestingKit.framework */,
+				EE7FEE131603623E00EA6F06 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7FEE131603623E00EA6F06 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FEE141603623E00EA6F06 /* AppKit.framework */,
+				EE7FEE151603623E00EA6F06 /* CoreData.framework */,
+				EE7FEE161603623E00EA6F06 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EE7FEE171603623E00EA6F06 /* PassagewayServerMac */ = {
+			isa = PBXGroup;
+			children = (
+				C37D497E171A0075008FD79F /* CLib */,
+				C3494F73170CB19F008B6A70 /* View */,
+				EE7FEE4B160362A700EA6F06 /* Controller */,
+				EE7FEE231603623E00EA6F06 /* PWAppDelegate.h */,
+				EE7FEE241603623E00EA6F06 /* PWAppDelegate.m */,
+				C39B504B17204F680014A003 /* UI */,
+				EE7FEE291603623F00EA6F06 /* PassagewayServerMac.xcdatamodeld */,
+				EE7FEE181603623E00EA6F06 /* Supporting Files */,
+			);
+			path = PassagewayServerMac;
+			sourceTree = "<group>";
+		};
+		EE7FEE181603623E00EA6F06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE82FCDA1607359B00882AF6 /* Macro.h */,
+				EE7FEE191603623E00EA6F06 /* PassagewayServerMac-Info.plist */,
+				EE7FEE1A1603623E00EA6F06 /* InfoPlist.strings */,
+				EE7FEE1D1603623E00EA6F06 /* main.m */,
+				EE7FEE1F1603623E00EA6F06 /* PassagewayServerMac-Prefix.pch */,
+				EE7FEE201603623E00EA6F06 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE7FEE371603623F00EA6F06 /* PassagewayServerMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D42EAD16F7191F00E334A7 /* ScreenCapture */,
+				C3B30393161244B400C6DAA0 /* Array */,
+				EE7FEE381603623F00EA6F06 /* Supporting Files */,
+				C361F17717245FCE00E74DDF /* CLib */,
+			);
+			path = PassagewayServerMacTests;
+			sourceTree = "<group>";
+		};
+		EE7FEE381603623F00EA6F06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FEE391603623F00EA6F06 /* PassagewayServerMacTests-Info.plist */,
+				EE7FEE3A1603623F00EA6F06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE7FEE4B160362A700EA6F06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDB3CD16DD4B62000C70BC /* PWMainWindowController.h */,
+				C3CDB3CE16DD4B62000C70BC /* PWMainWindowController.m */,
+				C3E4B910171B0DC300A66E95 /* PWMainController.h */,
+				C3E4B911171B0DC300A66E95 /* PWMainController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE7FEE0C1603623E00EA6F06 /* PassagewayServerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7FEE421603623F00EA6F06 /* Build configuration list for PBXNativeTarget "PassagewayServerMac" */;
+			buildPhases = (
+				EE7FEE091603623E00EA6F06 /* Sources */,
+				EE7FEE0A1603623E00EA6F06 /* Frameworks */,
+				EE7FEE0B1603623E00EA6F06 /* Resources */,
+				C3264DFF16B04A7B0087F9C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassagewayServerMac;
+			productName = PassagewayServerMac;
+			productReference = EE7FEE0D1603623E00EA6F06 /* PassagewayServerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE7FEE301603623F00EA6F06 /* PassagewayServerMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7FEE451603623F00EA6F06 /* Build configuration list for PBXNativeTarget "PassagewayServerMacTests" */;
+			buildPhases = (
+				EE7FEE2C1603623F00EA6F06 /* Sources */,
+				EE7FEE2D1603623F00EA6F06 /* Frameworks */,
+				EE7FEE2E1603623F00EA6F06 /* Resources */,
+				EE7FEE2F1603623F00EA6F06 /* ShellScript */,
+				C326625E16DBFCF800697198 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE7FEE361603623F00EA6F06 /* PBXTargetDependency */,
+			);
+			name = PassagewayServerMacTests;
+			productName = PassagewayServerMacTests;
+			productReference = EE7FEE311603623F00EA6F06 /* PassagewayServerMacTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE7FEE041603623E00EA6F06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PW;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = EE7FEE071603623E00EA6F06 /* Build configuration list for PBXProject "PassagewayServerMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE7FEE021603623E00EA6F06;
+			productRefGroup = EE7FEE0E1603623E00EA6F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7FEE0C1603623E00EA6F06 /* PassagewayServerMac */,
+				EE7FEE301603623F00EA6F06 /* PassagewayServerMacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE7FEE0B1603623E00EA6F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FEE1C1603623E00EA6F06 /* InfoPlist.strings in Resources */,
+				EE7FEE221603623E00EA6F06 /* Credits.rtf in Resources */,
+				C3B3038716122AD500C6DAA0 /* TODO in Resources */,
+				C39B504D17204F770014A003 /* MainWindow.xib in Resources */,
+				C39B504F172052210014A003 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7FEE2E1603623F00EA6F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FEE3C1603623F00EA6F06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE7FEE2F1603623F00EA6F06 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE7FEE091603623E00EA6F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FEE1E1603623E00EA6F06 /* main.m in Sources */,
+				EE7FEE251603623E00EA6F06 /* PWAppDelegate.m in Sources */,
+				EE7FEE2B1603623F00EA6F06 /* PassagewayServerMac.xcdatamodeld in Sources */,
+				C3CDB3CF16DD4B62000C70BC /* PWMainWindowController.m in Sources */,
+				C3494F76170CB1BA008B6A70 /* PWStatView.m in Sources */,
+				C37D4981171A0144008FD79F /* PWImageMacLib.m in Sources */,
+				C37D4985171A3029008FD79F /* PWMouseMacLib.m in Sources */,
+				C3E4B912171B0DC300A66E95 /* PWMainController.m in Sources */,
+				C39B50531721B9A60014A003 /* PWKeyboardMacLib.m in Sources */,
+				C326F33F172881CF00E5348C /* PWDisplayMacLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7FEE2C1603623F00EA6F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D42EAC16F718E000E334A7 /* ArrayCustomizationTests.m in Sources */,
+				C3D42EB016F7192B00E334A7 /* PWScreenCapturingTest.m in Sources */,
+				C37D4982171A0144008FD79F /* PWImageMacLib.m in Sources */,
+				C361F17617245FC600E74DDF /* PWCLibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE7FEE361603623F00EA6F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7FEE0C1603623E00EA6F06 /* PassagewayServerMac */;
+			targetProxy = EE7FEE351603623F00EA6F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE7FEE1A1603623E00EA6F06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7FEE1B1603623E00EA6F06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE7FEE201603623E00EA6F06 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7FEE211603623E00EA6F06 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EE7FEE3A1603623F00EA6F06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7FEE3B1603623F00EA6F06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE7FEE401603623F00EA6F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE7FEE411603623F00EA6F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE7FEE431603623F00EA6F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Mark Sinkovics (FB9BSFHLHA)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PassagewayServerMac/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayServerMac/PassagewayServerMac-Prefix.pch";
+				INFOPLIST_FILE = "PassagewayServerMac/PassagewayServerMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE7FEE441603623F00EA6F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Mark Sinkovics (FB9BSFHLHA)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PassagewayServerMac/Frameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayServerMac/PassagewayServerMac-Prefix.pch";
+				INFOPLIST_FILE = "PassagewayServerMac/PassagewayServerMac-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EE7FEE461603623F00EA6F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PassagewayServerMac.app/Contents/MacOS/PassagewayServerMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/PassagewayServerMac/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayServerMac/PassagewayServerMac-Prefix.pch";
+				INFOPLIST_FILE = "PassagewayServerMacTests/PassagewayServerMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EE7FEE471603623F00EA6F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PassagewayServerMac.app/Contents/MacOS/PassagewayServerMac";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/PassagewayServerMac/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassagewayServerMac/PassagewayServerMac-Prefix.pch";
+				INFOPLIST_FILE = "PassagewayServerMacTests/PassagewayServerMacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE7FEE071603623E00EA6F06 /* Build configuration list for PBXProject "PassagewayServerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7FEE401603623F00EA6F06 /* Debug */,
+				EE7FEE411603623F00EA6F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7FEE421603623F00EA6F06 /* Build configuration list for PBXNativeTarget "PassagewayServerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7FEE431603623F00EA6F06 /* Debug */,
+				EE7FEE441603623F00EA6F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7FEE451603623F00EA6F06 /* Build configuration list for PBXNativeTarget "PassagewayServerMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7FEE461603623F00EA6F06 /* Debug */,
+				EE7FEE471603623F00EA6F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE7FEE291603623F00EA6F06 /* PassagewayServerMac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE7FEE2A1603623F00EA6F06 /* PassagewayServerMac.xcdatamodel */,
+			);
+			currentVersion = EE7FEE2A1603623F00EA6F06 /* PassagewayServerMac.xcdatamodel */;
+			path = PassagewayServerMac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE7FEE041603623E00EA6F06 /* Project object */;
+}

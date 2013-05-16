@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'PassagewayServerMac' target in the 'PassagewayServerMac' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Foundation/Foundation.h>
+	#import <CoreServices/CoreServices.h>
+
+	#import <PWServer/PWServer.h>
+
+#endif

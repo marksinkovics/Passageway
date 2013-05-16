@@ -1,0 +1,106 @@
+/*
+//	CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
+//	
+//	CFDataRef data = CGDataProviderCopyData(dataProvider);
+//	
+//	CGDataProviderRelease(dataProvider);
+//
+//	return [(NSData*)data autorelease];
+//	
+//	NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithCGImage:imageRef];
+//	
+//	NSGraphicsContext* context = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmapRep];
+//	
+//    [NSGraphicsContext saveGraphicsState];
+//	
+//    [NSGraphicsContext setCurrentContext: context];
+//	
+//	CGContextDrawImage([context graphicsPort], CGRectMake(0, 0, CGImageGetWidth(imageRef), CGImageGetHeight(imageRef)), imageRef);
+//	
+//    [NSGraphicsContext restoreGraphicsState];
+//	
+//	// set up the options for creating a JPEG
+//    NSDictionary* jpegOptions = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                 @0, NSImageCompressionFactor,
+//                                 @YES, NSImageProgressive,
+//                                 nil];
+//	
+//	
+//	NSData* imgData = [bitmapRep representationUsingType:NSJPEGFileType properties:jpegOptions];
+//	
+//	NSLog(@"imgData %f kB", imgData.length / 1024.0);
+//	
+//	[bitmapRep release];
+//
+//	return imgData;
+	*/
+	
+	
+	
+	
+	/*
+CGImageRef grabWindow(CGWindowID windowID)
+{
+	return CGWindowListCreateImage(CGRectInfinite, kCGWindowListOptionIncludingWindow, windowID, kCGWindowImageDefault);;
+}
+
+CGImageRef grapFullscreenWithCenterWindowsNWithoutWindows(NSArray* centerWindows, NSArray* withoutWindows)
+{
+	CGImageRef *allImageRefArray = malloc((2 + centerWindows.count) * sizeof(CGImageRef));
+	
+	int arrayCounter = 0;
+	
+	if (withoutWindows.count == 0)
+	{
+		allImageRefArray[arrayCounter++] = _grabFullscreen(1.0);
+	}
+	else
+	{
+		unsigned int bottomWindowID = [[withoutWindows lastObject] windowID];
+		
+		unsigned int topWindowID = [[withoutWindows objectAtIndex:0] windowID];
+		
+		allImageRefArray[arrayCounter++] = CGWindowListCreateImage(CGRectInfinite, kCGWindowListOptionOnScreenBelowWindow, bottomWindowID, kCGWindowImageDefault);
+		
+		if (centerWindows.count > 0)
+		{
+			for (id windowID in centerWindows)
+			{
+				allImageRefArray[arrayCounter++] = grabWindow([windowID windowID]);
+			}
+			
+			allImageRefArray[arrayCounter++] = CGWindowListCreateImage(CGRectInfinite, kCGWindowListOptionOnScreenAboveWindow, topWindowID, kCGWindowImageDefault);
+		}
+		
+		allImageRefArray[arrayCounter++] = CGWindowListCreateImage(CGRectInfinite, kCGWindowListOptionOnScreenAboveWindow, topWindowID, kCGWindowImageDefault);
+	}
+	
+	CGImageRef result = NULL;
+	
+	if (arrayCounter == 1)
+	{
+		result = allImageRefArray[0];
+	}
+	else
+	{
+		result = _mergeImageRefs(allImageRefArray, arrayCounter, 0.5);
+	}
+	
+	for (int i = 0; i < arrayCounter; i++)
+	{
+		CGImageRelease(allImageRefArray[i]);
+	}
+	
+	free(allImageRefArray);
+	
+	return result;
+}
+
+
+NSImage* imageFromFullScreenWithCenterWindowsWithoutWindows(NSArray* centerWindows, NSArray* withoutWindows)
+{
+	CGImageRef imageRef = grapFullscreenWithCenterWindowsNWithoutWindows(centerWindows, withoutWindows);
+	
+	return _imageFromCGImage(imageRef);
+}
+*/
